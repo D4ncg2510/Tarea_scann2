@@ -1,0 +1,2338 @@
+Plugin ID,CVE,CVSS v2.0 Base Score,Risk,Host,Protocol,Port,Name,Synopsis,Description,Solution,See Also,Plugin Output,STIG Severity,CVSS v3.0 Base Score,CVSS v2.0 Temporal Score,CVSS v3.0 Temporal Score,VPR Score,Risk Factor,BID,XREF,MSKB,Plugin Publication Date,Plugin Modification Date,Metasploit,Core Impact,CANVAS
+"10107","","","None","10.0.2.15","tcp","8834","HTTP Server Type and Version","A web server is running on the remote host.","This plugin attempts to determine the type and the version of the
+  remote web server.","n/a","","The remote web server type is :
+
+NessusWWW","","","","","","None","","IAVT:0001-T-0931","","2000/01/04","2020/10/30","","",""
+"10147","","","None","10.0.2.15","tcp","8834","Nessus Server Detection","A Nessus daemon is listening on the remote port.","A Nessus daemon is listening on the remote port.","Ensure that the remote Nessus installation has been authorized.","https://www.tenable.com/products/nessus/nessus-professional","
+  URL     : https://10.0.2.15:8834/
+  Version : unknown
+","","","","","","None","","IAVT:0001-T-0673","","1999/10/12","2023/02/08","","",""
+"10863","","","None","10.0.2.15","tcp","8834","SSL Certificate Information","This plugin displays the SSL certificate.","This plugin connects to every SSL-related port and attempts to 
+extract and dump the X.509 certificate.","n/a","","Subject Name: 
+
+Organization: Nessus Users United
+Organization Unit: Nessus Server
+Locality: New York
+Country: US
+State/Province: NY
+Common Name: kali
+
+Issuer Name: 
+
+Organization: Nessus Users United
+Organization Unit: Nessus Certification Authority
+Locality: New York
+Country: US
+State/Province: NY
+Common Name: Nessus Certification Authority
+
+Serial Number: 7D B6 
+
+Version: 3
+
+Signature Algorithm: SHA-256 With RSA Encryption
+
+Not Valid Before: Apr 27 21:45:45 2024 GMT
+Not Valid After: Apr 26 21:45:45 2028 GMT
+
+Public Key Info: 
+
+Algorithm: RSA Encryption
+Key Length: 2048 bits
+Public Key: 00 D3 37 BE 2E 5D 1D D6 41 85 E7 7D 31 38 BB A1 CB B4 9E 24 
+            C8 53 79 5D C4 BE 05 34 49 63 7D FE 52 27 96 0A 83 B5 55 63 
+            D0 99 87 1E DA 38 6E 65 BB B9 85 CA 25 37 10 BE 6A 3F 58 53 
+            BB C5 7A 0A C7 5D 2F B1 67 80 05 92 36 49 D3 97 3D 64 99 5E 
+            D3 EF 7A 65 49 FA 14 5C 37 44 E4 A9 B7 5B 4D AF 7B 08 D3 50 
+            08 5C F6 6D 46 A8 43 FF 22 5F 3C DB CD B4 CA A2 5D 90 5C FC 
+            1E 5F 6D 7E A5 7A D7 E2 50 6E EF 78 0C 76 68 41 D4 17 6D EA 
+            A0 8B 57 52 69 56 A5 4A E4 7F 66 82 BE 63 EC 6E E8 B7 32 5E 
+            38 A7 4A A1 4C EF FC 15 A8 50 75 B9 6E 54 8F A6 54 06 BF F5 
+            9B 6C 26 61 C7 B6 61 35 57 A2 EA 81 86 2C DA F8 2E 19 62 07 
+            CF 82 19 88 DA 9A 24 97 D4 DA 97 5D 7F E3 E5 46 CA B4 4B D0 
+            3B CC 9E 0A E2 CE C0 E0 03 A0 72 04 A1 44 B6 C7 7B 6C 57 6C 
+            67 59 75 5A 06 D9 36 5E 41 44 92 8C 68 CA 31 21 41 
+Exponent: 01 00 01 
+
+Signature Length: 256 bytes / 2048 bits
+Signature: 00 B5 C0 FC 9E 63 86 12 CE 79 DB A1 35 8A 3A 67 62 D7 11 79 
+           D6 D6 27 6E 07 66 9E 39 FD A7 53 7D F9 AD A3 93 A8 EC AB 39 
+           95 48 AC 0C 05 3E 80 92 9B FA EA 4F A0 40 C2 DC A3 09 6A 7F 
+           76 22 94 C9 B5 5D 68 F0 BA 5F 1C BA D0 52 58 60 F0 1B 42 BE 
+           EC 2B 1E C2 4C CC 71 64 AF 12 C5 38 D4 F6 29 4B D9 F7 25 BC 
+           87 28 67 A1 C2 1E CD 5E 72 CA 53 BE 6A 25 1D 8A FB 48 25 EE 
+           E2 74 77 E1 F6 F6 C4 91 DA E3 6F 73 0E 0D F3 05 DD A1 56 1B 
+           73 85 D0 B9 75 58 36 4C CB 6A B8 D8 B3 2C 2F 6F 58 FD 52 14 
+           58 CE 25 A8 C7 60 A0 1C 8C 47 12 6A 36 D2 A7 E8 1A 4A 5A A6 
+           2C A0 12 A0 8F BD F7 1A E9 EF 8E 0E 46 F8 A3 7A 54 51 C7 15 
+           26 95 6E 15 FD 97 78 E7 F9 35 C1 4A 35 48 47 22 39 63 B0 41 
+           82 AE 84 85 3F BD 75 6E AD BA EE 3F 0F 9F 3A 6C CD 94 70 EE 
+           74 7E 94 B3 AB 35 D5 67 E7 CB FA 56 73 42 E3 F5 27 
+
+Extension: 2.16.840.1.113730.1.1
+Critical: 0
+Data: 03 02 06 40 
+
+
+Extension: Key Usage (2.5.29.15)
+Critical: 1
+Key Usage: Digital Signature, Non Repudiation, Key Encipherment
+
+
+Extension: Subject Key Identifier (2.5.29.14)
+Critical: 0
+Subject Key Identifier: 70 19 23 D6 81 B1 D2 3A DD E9 3D 78 BF 90 B7 CB 28 97 39 85 
+
+
+Extension: Authority Key Identifier (2.5.29.35)
+Critical: 0
+Key Identifier: 94 6F 42 7F 29 F0 D6 33 2B 9A 84 59 4B 07 4B 95 2C 8E 5B 7E 
+
+
+Extension: Extended Key Usage (2.5.29.37)
+Critical: 0
+Purpose#1: Web Server Authentication (1.3.6.1.5.5.7.3.1)
+
+
+Fingerprints : 
+
+SHA-256 Fingerprint: 18 6B 3A C7 DA E0 2B E0 6E DA A6 38 29 16 F0 C5 B0 02 A7 49 
+                     F1 92 FD 7F 3E 53 14 B6 C7 F9 AF 7F 
+SHA-1 Fingerprint: E0 1D E7 8A FE 7A DF 0F EF 7B 2F 5B F0 25 48 80 D3 E2 BF 9D 
+MD5 Fingerprint: 2B 13 D1 51 A0 4A 7C 6F C4 44 84 97 A3 50 47 0D 
+
+
+PEM certificate : 
+
+-----BEGIN CERTIFICATE-----
+MIIEBjCCAu6gAwIBAgICfbYwDQYJKoZIhvcNAQELBQAwgZ0xHDAaBgNVBAoME05lc3N1cyBVc2VycyBVbml0ZWQxJzAlBgNVBAsMHk5lc3N1cyBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eTERMA8GA1UEBwwITmV3IFlvcmsxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJOWTEnMCUGA1UEAwweTmVzc3VzIENlcnRpZmljYXRpb24gQXV0aG9yaXR5MB4XDTI0MDQyNzIxNDU0NVoXDTI4MDQyNjIxNDU0NVowcjEcMBoGA1UECgwTTmVzc3VzIFVzZXJzIFVuaXRlZDEWMBQGA1UECwwNTmVzc3VzIFNlcnZlcjERMA8GA1UEBwwITmV3IFlvcmsxCzAJBgNVBAYTAlVTMQswCQYDVQQIDAJOWTENMAsGA1UEAwwEa2FsaTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANM3vi5dHdZBhed9MTi7ocu0niTIU3ldxL4FNEljff5SJ5YKg7VVY9CZhx7aOG5lu7mFyiU3EL5qP1hTu8V6CsddL7FngAWSNknTlz1kmV7T73plSfoUXDdE5Km3W02vewjTUAhc9m1GqEP/Il882820yqJdkFz8Hl9tfqV61+JQbu94DHZoQdQXbeqgi1dSaValSuR/ZoK+Y+xu6LcyXjinSqFM7/wVqFB1uW5Uj6ZUBr/1m2wmYce2YTVXouqBhiza+C4ZYgfPghmI2pokl9Tal11/4+VGyrRL0DvMngrizsDgA6ByBKFEtsd7bFdsZ1l1WgbZNl5BRJKMaMoxIUECAwEAAaN6MHgwEQYJYIZIAYb4QgEBBAQDAgZAMA4GA1UdDwEB/wQEAwIF4DAdBgNVHQ4EFgQUcBkj1oGx0jrd6T14v5C3yyiXOYUwHwYDVR0jBBgwFoAUlG9Cfynw1jMrmoRZSwdLlSyOW34wEwYDVR0lBAwwCgYIKwYBBQUHAwEwDQYJKoZIhvcNAQELBQADggEBALXA/J5jhhLOeduhNYo6Z2LXEXnW1iduB2aeOf2nU335raOTqOyrOZVIrAwFPoCSm/rqT6BAwtyjCWp/diKUybVdaPC6Xxy60FJYYPAbQr7sKx7CTMxxZK8SxTjU9ilL2fclvIcoZ6HCHs1ecspTvmolHYr7SCXu4nR34fb2xJHa429zDg3zBd2hVhtzhdC5dVg2TMtquNizLC9vWP1SFFjOJajHYKAcjEcSajbSp+gaSlqmLKASoI+99xrp744ORvijelRRxxUmlW4V/Zd45/k1wUo1SEciOWOwQYKuhIU/vXVurbruPw+fOmzNlHDudH6Us6s11Wfny/pWc0Lj9Sc=
+-----END CERTIFICATE-----","","","","","","None","","","","2008/05/19","2021/02/03","","",""
+"11936","","","None","10.0.2.15","tcp","0","OS Identification","It is possible to guess the remote operating system.","Using a combination of remote probes (e.g., TCP/IP, SMB, HTTP, NTP,
+SNMP, etc.), it is possible to guess the name of the remote operating
+system in use. It is also possible sometimes to guess the version of
+the operating system.","n/a","","
+Remote operating system : Linux Kernel 6.6.9-amd64
+Confidence level : 99
+Method : uname
+
+ 
+The remote host is running Linux Kernel 6.6.9-amd64","","","","","","None","","","","2003/12/09","2023/11/08","","",""
+"14272","","","None","10.0.2.15","tcp","8834","Netstat Portscanner (SSH)","Remote open ports can be enumerated via SSH.","Nessus was able to run 'netstat' on the remote host to enumerate the
+open ports. If 'netstat' is not available, the plugin will attempt to use 'ss'.
+
+See the section 'plugins options' about configuring this plugin.
+
+Note: If the scan policy has WMI Netstat enabled, this plugin will run on 
+Windows (using netstat.exe) in the event that the target being scanned is localhost.","n/a","https://en.wikipedia.org/wiki/Netstat","Port 8834/tcp was found to be open","","","","","","None","","","","2004/08/15","2024/04/24","","",""
+"19506","","","None","10.0.2.15","tcp","0","Nessus Scan Information","This plugin displays information about the Nessus scan.","This plugin displays, for each tested host, information about the
+scan itself :
+
+  - The version of the plugin set.
+  - The type of scanner (Nessus or Nessus Home).
+  - The version of the Nessus Engine.
+  - The port scanner(s) used.
+  - The port range scanned.
+  - The ping round trip time 
+  - Whether credentialed or third-party patch management
+    checks are possible.
+  - Whether the display of superseded patches is enabled
+  - The date of the scan.
+  - The duration of the scan.
+  - The number of hosts scanned in parallel.
+  - The number of checks done in parallel.","n/a","","Information about this scan : 
+
+Nessus version : 10.7.2
+Nessus build : 20029
+Plugin feed version : 202405022036
+Scanner edition used : Nessus Home
+Scanner OS : LINUX
+Scanner distribution : ubuntu1404-x86-64
+Scan type : Normal
+Scan name : Dispositivo 1A
+Scan policy used : Advanced Scan
+Scanner IP : 10.0.2.15
+Ping RTT : Unavailable
+Thorough tests : no
+Experimental tests : no
+Plugin debugging enabled : no
+Paranoia level : 1
+Report verbosity : 1
+Safe checks : yes
+Optimize the test : no
+Credentialed checks : yes (on the localhost)
+Attempt Least Privilege : no
+Patch management checks : None
+Display superseded patches : yes (supersedence plugin did not launch)
+CGI scanning : disabled
+Web application tests : disabled
+Max hosts : 100
+Max checks : 5
+Recv timeout : 5
+Backports : None
+Allow post-scan editing : Yes
+Nessus Plugin Signature Checking : Enabled
+Audit File Signature Checking : Disabled
+Scan Start Date : 2024/5/2 21:10 EDT
+Scan duration : 423 sec
+Scan for malware : no
+","","","","","","None","","","","2005/08/26","2024/03/13","","",""
+"21643","","","None","10.0.2.15","tcp","8834","SSL Cipher Suites Supported","The remote service encrypts communications using SSL.","This plugin detects which SSL ciphers are supported by the remote
+service for encrypting communications.","n/a","https://www.openssl.org/docs/man1.0.2/man1/ciphers.html
+http://www.nessus.org/u?e17ffced","
+Here is the list of SSL ciphers supported by the remote server :
+Each group is reported per SSL Version.
+
+SSL Version : TLSv13
+  High Strength Ciphers (>= 112-bit key)
+
+    Name                          Code             KEX           Auth     Encryption             MAC
+    ----------------------        ----------       ---           ----     ---------------------  ---
+    TLS_AES_128_GCM_SHA256        0x13, 0x01       -             -        AES-GCM(128)           AEAD
+    TLS_AES_256_GCM_SHA384        0x13, 0x02       -             -        AES-GCM(256)           AEAD
+    TLS_CHACHA20_POLY1305_SHA256  0x13, 0x03       -             -        ChaCha20-Poly1305(256) AEAD
+
+
+SSL Version : TLSv12
+  High Strength Ciphers (>= 112-bit key)
+
+    Name                          Code             KEX           Auth     Encryption             MAC
+    ----------------------        ----------       ---           ----     ---------------------  ---
+    ECDHE-RSA-AES128-SHA256       0xC0, 0x2F       ECDH          RSA      AES-GCM(128)           SHA256
+    ECDHE-RSA-AES256-SHA384       0xC0, 0x30       ECDH          RSA      AES-GCM(256)           SHA384
+
+The fields above are :
+
+  {Tenable ciphername}
+  {Cipher ID code}
+  Kex={key exchange}
+  Auth={authentication}
+  Encrypt={symmetric encryption method}
+  MAC={message authentication code}
+  {export flag}
+","","","","","","None","","","","2006/06/05","2023/07/10","","",""
+"22869","","","None","10.0.2.15","tcp","0","Software Enumeration (SSH)","It was possible to enumerate installed software on the remote host via
+SSH.","Nessus was able to list the software installed on the remote host by
+calling the appropriate command (e.g., 'rpm -qa' on RPM-based Linux
+distributions, qpkg, dpkg, etc.).","Remove any software that is not in compliance with your organization's
+acceptable use and security policies.","","
+Here is the list of packages installed on the remote Debian Linux system : 
+
+  ii   7zip  23.01+dfsg-8  amd64  7-Zip file archiver with a high compression ratio
+  ii   accountsservice  23.13.9-6  amd64  query and manipulate user account information
+  ii   acl  2.3.2-1  amd64  access control list - utilities
+  ii   adduser  3.137  all  add and remove users and groups
+  ii   adwaita-icon-theme  45.0-2  all  default icon theme of GNOME
+  ii   aircrack-ng  1:1.7-5  amd64  wireless WEP/WPA cracking utilities
+  ii   alsa-topology-conf  1.2.5.1-2  all  ALSA topology configuration files
+  ii   alsa-ucm-conf  1.2.10-1  all  ALSA Use Case Manager configuration files
+  ii   amass  4.2.0-0kali1  amd64  In-depth DNS Enumeration and Network Mapping
+  ii   amass-common  4.2.0-0kali1  all  In-depth DNS Enumeration and Network Mapping
+  ii   amd64-microcode  3.20231019.1  amd64  Processor microcode firmware for AMD CPUs
+  ii   apache2  2.4.58-1+b1  amd64  Apache HTTP Server
+  ii   apache2-bin  2.4.58-1+b1  amd64  Apache HTTP Server (modules and other binary files)
+  ii   apache2-data  2.4.58-1  all  Apache HTTP Server (common files)
+  ii   apache2-utils  2.4.58-1+b1  amd64  Apache HTTP Server (utility programs for web servers)
+  ii   apparmor  3.0.12-1+b2  amd64  user-space parser utility for AppArmor
+  ii   apt  2.7.10+kali1  amd64  commandline package manager
+  ii   apt-file  3.3  all  search for files within Debian packages (command-line interface)
+  ii   apt-utils  2.7.10+kali1  amd64  package management related utility programs
+  ii   arj  3.10.22-26  amd64  archiver for .arj files
+  ii   arp-scan  1.10.0-2  amd64  arp scanning and fingerprinting tool
+  ii   arping  2.24-1  amd64  sends IP and/or ARP pings (to the MAC address)
+  ii   aspell  0.60.8.1-1+b1  amd64  GNU Aspell spell-checker
+  ii   aspell-en  2020.12.07-0-1  all  English dictionary for GNU Aspell
+  ii   aspnetcore-runtime-6.0  6.0.8-1  amd64  
+  ii   aspnetcore-targeting-pack-6.0  6.0.9-1  amd64  
+  ii   at-spi2-common  2.50.0-1  all  Assistive Technology Service Provider Interface (common files)
+  ii   at-spi2-core  2.50.0-1+b1  amd64  Assistive Technology Service Provider Interface (D-Bus core)
+  ii   atftpd  0.8.0-3+b1  amd64  advanced TFTP server
+  ii   atril  1.26.2-1  amd64  MATE document viewer
+  ii   atril-common  1.26.2-1  all  MATE document viewer (common files)
+  ii   attr  1:2.5.2-1  amd64  utilities for manipulating filesystem extended attributes
+  ii   autopsy  2.24-6  all  graphical interface to SleuthKit
+  ii   avahi-daemon  0.8-13+b1  amd64  Avahi mDNS/DNS-SD daemon
+  ii   axel  2.17.13-1  amd64  light command line download accelerator
+  ii   base-files  1:2024.1.0  amd64  Debian base system miscellaneous files
+  ii   base-passwd  3.6.3  amd64  Debian base system master password and group files
+  ii   base58  1.0.3-2  all  Command line encoder and decoder for Base58 format
+  ii   bash  5.2.21-2  amd64  GNU Bourne Again SHell
+  ii   bash-completion  1:2.11-8  all  programmable completion for the bash shell
+  ii   bind9-dnsutils  1:9.19.19-1  amd64  Clients provided with BIND 9
+  ii   bind9-host  1:9.19.19-1  amd64  DNS Lookup Utility
+  ii   bind9-libs  1:9.19.19-1  amd64  Shared Libraries used by BIND 9
+  ii   binutils  2.42-2  amd64  GNU assembler, linker and binary utilities
+  ii   binutils-common  2.42-2  amd64  Common files for the GNU assembler, linker and binary utilities
+  ii   binutils-mingw-w64-i686  2.41.90.20240122-1+11.4  amd64  Cross-binutils for Win32 (x86) using MinGW-w64
+  ii   binutils-mingw-w64-x86-64  2.41.90.20240122-1+11.4  amd64  Cross-binutils for Win64 (x64) using MinGW-w64
+  ii   binutils-x86-64-linux-gnu  2.42-2  amd64  GNU binary utilities, for x86-64-linux-gnu target
+  ii   binwalk  2.3.4+dfsg1-1  all  tool library for analyzing binary blobs and executable code
+  ii   blt  2.5.3+dfsg-7  amd64  graphics extension library for Tcl/Tk - run-time
+  ii   blueman  2.3.5-3  amd64  Graphical bluetooth manager
+  ii   bluez  5.71-1+kali1  amd64  Bluetooth tools and daemons
+  ii   bluez-firmware  1.2-9  all  Firmware for Bluetooth devices
+  ii   bluez-hcidump  5.71-1+kali1  amd64  Analyses Bluetooth HCI packets
+  ii   bluez-obexd  5.71-1+kali1  amd64  bluez obex daemon
+  ii   bsdextrautils  2.39.3-6  amd64  extra utilities from 4.4BSD-Lite
+  ii   bsdutils  1:2.39.3-6  amd64  basic utilities from 4.4BSD-Lite
+  ii   bubblewrap  0.8.0-2  amd64  utility for unprivileged chroot and namespace manipulation
+  ii   build-essential  12.10  amd64  Informational list of build-essential packages
+  ii   bulk-extractor  2.1.0-0kali1  amd64  Extracts information without parsing filesystem
+  ii   bully  1.4.00-2  amd64  Implementation of the WPS brute force attack, written in C
+  ii   bundler  2.4.20-1  all  Manage Ruby application dependencies
+  ii   burpsuite  2023.12.1.3-0kali1  amd64  platform for security testing of web applications
+  ii   busybox  1:1.36.1-6  amd64  Tiny utilities for small and embedded systems
+  ii   bzip2  1.0.8-5+b2  amd64  high-quality block-sorting file compressor - utilities
+  ii   ca-certificates  20230311  all  Common CA certificates
+  ii   ca-certificates-java  20240118  all  Common CA certificates (JKS keystore)
+  ii   cadaver  0.24+dfsg-2  amd64  command-line WebDAV client
+  ii   catfish  4.16.4-2  all  File searching tool which is configurable via the command line
+  ii   certipy-ad  4.7.0-0kali3  all  Tool for attacking AD Certificate Services
+  ii   cewl  6.1-1  all  custom word list generator
+  ii   cgpt  0~R106-15054.B-2  amd64  GPT manipulation tool with support for Chromium OS extensions
+  ii   cherrytree  1.0.2+dfsg-1  amd64  hierarchical note taking application
+  ii   chntpw  140201-1  amd64  NT SAM password recovery utility
+  ii   cifs-utils  2:7.0-2  amd64  Common Internet File System utilities
+  ii   clang  1:16.0-57  amd64  C, C++ and Objective-C compiler (LLVM based), clang binary
+  ii   clang-16  1:16.0.6-19  amd64  C, C++ and Objective-C compiler
+  ii   code-oss  1.82.2+ds-0kali2  amd64  Open Source package of vscode
+  ii   colord  1.4.6-5  amd64  system service to manage device colour profiles -- system daemon
+  ii   colord-data  1.4.6-5  all  system service to manage device colour profiles -- data files
+  ii   command-not-found  23.04.0-1+kali3  all  Suggest installation of packages in interactive bash sessions
+  ii   commix  3.9-0kali1  all  Automated All-in-One OS Command Injection and Exploitation Tool
+  ii   console-setup  1.223  all  console font and keymap setup program
+  ii   console-setup-linux  1.223  all  Linux specific part of console-setup
+  ii   coreboot-utils  4.15~dfsg-4  amd64  Coreboot firmware utilities
+  ii   coreboot-utils-doc  4.15~dfsg-4  all  Coreboot firmware utilities - documentation
+  ii   coreutils  9.4-3+b1  amd64  GNU core utilities
+  ii   cpio  2.15+dfsg-1  amd64  GNU cpio -- a program to manage archives of files
+  ii   cpp  4:13.2.0-7  amd64  GNU C preprocessor (cpp)
+  ii   cpp-13  13.2.0-13  amd64  GNU C preprocessor
+  ii   cpp-13-x86-64-linux-gnu  13.2.0-13  amd64  GNU C preprocessor for x86_64-linux-gnu
+  ii   cpp-x86-64-linux-gnu  4:13.2.0-7  amd64  GNU C preprocessor (cpp) for the amd64 architecture
+  ii   cracklib-runtime  2.9.6-5.1+b1  amd64  runtime support for password checker library cracklib2
+  ii   crackmapexec  5.4.0-0kali5  all  Swiss army knife for pentesting networks
+  ii   cramfsswap  1.4.2  amd64  swap endianness of a cram filesystem (cramfs)
+  ii   creddump7  0.1+git20190429-1.1  all  Python tool to extract credentials and secrets from Windows registry hives
+  ii   cron  3.0pl1-184  amd64  process scheduling daemon
+  ii   cron-daemon-common  3.0pl1-184  all  process scheduling daemon's configuration files
+  ii   crunch  3.6-3  amd64  tool for creating wordlist
+  ii   cryptcat  20031202-5kali7  amd64  lightweight version netcat extended with twofish encryption
+  ii   cryptsetup  2:2.6.1-6+b1  amd64  disk encryption support - startup scripts
+  ii   cryptsetup-bin  2:2.6.1-6+b1  amd64  disk encryption support - command line tools
+  ii   cryptsetup-initramfs  2:2.6.1-6  all  disk encryption support - initramfs integration
+  ii   cryptsetup-nuke-password  4+nmu1+kali1  amd64  Erase the LUKS keys with a special password on the unlock prompt
+  ii   curl  8.5.0-2  amd64  command line tool for transferring data with URL syntax
+  ii   curlftpfs  0.9.2-9+b1  amd64  filesystem to access FTP hosts based on FUSE and cURL
+  ii   cutycapt  0.0~svn10-0.1+b2  amd64  utility to capture WebKit's rendering of a web page
+  ii   dash  0.5.12-6  amd64  POSIX-compliant shell
+  ii   davtest  1.2+git20230307.34d31db-0kali1  all  Testing tool for WebDAV servers
+  ii   dbd  1.50-1kali7  amd64  Netcat clone with encryption
+  ii   dbus  1.14.10-4  amd64  simple interprocess messaging system (system message bus)
+  ii   dbus-bin  1.14.10-4  amd64  simple interprocess messaging system (command line utilities)
+  ii   dbus-daemon  1.14.10-4  amd64  simple interprocess messaging system (reference message bus)
+  ii   dbus-session-bus-common  1.14.10-4  all  simple interprocess messaging system (session bus configuration)
+  ii   dbus-system-bus-common  1.14.10-4  all  simple interprocess messaging system (system bus configuration)
+  ii   dbus-user-session  1.14.10-4  amd64  simple interprocess messaging system (systemd --user integration)
+  ii   dbus-x11  1.14.10-4  amd64  simple interprocess messaging system (X11 deps)
+  ii   dconf-gsettings-backend  0.40.0-4+b1  amd64  simple configuration storage system - GSettings back-end
+  ii   dconf-service  0.40.0-4+b1  amd64  simple configuration storage system - D-Bus service
+  ii   dcraw  9.28-3+b1  amd64  decode raw digital camera images
+  ii   debconf  1.5.85  all  Debian configuration management system
+  ii   debconf-i18n  1.5.85  all  full internationalization support for debconf
+  ii   debian-archive-keyring  2023.4  all  GnuPG archive keys of the Debian archive
+  ii   debianutils  5.16  amd64  Miscellaneous utilities specific to Debian
+  ii   debugedit  1:5.0-5  amd64  tools for handling build-ids and paths rewriting in DWARF data
+  ii   default-jre  2:1.17-75  amd64  Standard Java or Java compatible Runtime
+  ii   default-jre-headless  2:1.17-75  amd64  Standard Java or Java compatible Runtime (headless)
+  ii   default-mysql-server  1.1.0  all  MySQL database server binaries and system database setup (metapackage)
+  ii   desktop-base  12.0.6+nmu1+kali1  all  common files for the Debian Desktop
+  ii   desktop-file-utils  0.27-1  amd64  Utilities for .desktop files
+  ii   dictionaries-common  1.29.7  all  spelling dictionaries - common utilities
+  ii   diffutils  1:3.10-1  amd64  File comparison utilities
+  ii   dirb  2.22+dfsg-5  amd64  URL bruteforcing tool
+  ii   dirbuster  1.0-1kali6  all  Web server directory brute-forcer
+  ii   dirmngr  2.2.40-1.1+b1  amd64  GNU privacy guard - network certificate management service
+  ii   distro-info-data  0.60  all  information about the distributions' releases (data files)
+  ii   dmidecode  3.5-3  amd64  SMBIOS/DMI table decoder
+  ii   dmitry  1.3a-2  amd64  Deepmagic Information Gathering Tool
+  ii   dmsetup  2:1.02.185-3  amd64  Linux Kernel Device Mapper userspace library
+  ii   dns-root-data  2023010101  all  DNS root data including root zone and DNSSEC key
+  ii   dns2tcp  0.5.2-3  amd64  TCP-over-DNS tunnel server and client
+  ii   dnschef  0.4+git20190327-0kali3  all  DNS proxy for penetration testers
+  ii   dnsenum  1.3.1-1.1  all  tool to enumerate domain DNS information
+  ii   dnsmap  0.36-3  amd64  DNS domain name brute forcing tool
+  ii   dnsmasq-base  2.89-1  amd64  Small caching DNS proxy and DHCP/TFTP server
+  ii   dnsrecon  1.1.5-1  all  Powerful DNS enumeration script
+  ii   doc-base  0.11.2  all  utilities to manage online documentation
+  ii   docbook-xml  4.5-12  all  standard XML documentation system for software and systems
+  ii   dos2unix  7.5.1-1  amd64  convert text file line endings between CRLF and LF
+  ii   dosfstools  4.2-1  amd64  utilities for making and checking MS-DOS FAT filesystems
+  ii   dotnet-apphost-pack-6.0  6.0.9-1  amd64  Microsoft.NETCore.App.Host 6.0.9
+  ii   dotnet-host  6.0.9-1  amd64  Microsoft .NET Host - 6.0.9
+  ii   dotnet-hostfxr-6.0  6.0.9-1  amd64  Microsoft .NET Host FX Resolver - 6.0.9
+  ii   dotnet-runtime-6.0  6.0.8-1  amd64  Microsoft.NETCore.App.Runtime 6.0.8
+  ii   dotnet-runtime-deps-6.0  6.0.9-1  amd64  dotnet-runtime-deps-debian 6.0.9
+  ii   dotnet-sdk-6.0  6.0.400-1  amd64  Microsoft .NET SDK 6.0.400
+  ii   dotnet-targeting-pack-6.0  6.0.9-1  amd64  Microsoft.NETCore.App.Ref 6.0.9
+  ii   dpkg  1.22.4+kali2  amd64  Debian package management system
+  ii   dpkg-dev  1.22.4+kali2  all  Debian package development tools
+  ii   dsniff  2.4b1+debian-31  amd64  Various tools to sniff network traffic for cleartext insecurities
+  ii   dvisvgm  3.2+ds-1  amd64  DVI to SVG converter
+  ii   e2fsprogs  1.47.0-2+b1  amd64  ext2/ext3/ext4 file system utilities
+  ii   easy-rsa  3.1.7-2  all  Simple shell based CA utility
+  ii   eject  2.39.3-6  amd64  ejects CDs and operates CD-Changers under Linux
+  ii   emacsen-common  3.0.5  all  Common facilities for all emacsen
+  ii   enchant-2  2.3.3-2+b1  amd64  Wrapper for various spell checker engines (binary programs)
+  ii   engrampa  1.26.2-3  amd64  archive manager for MATE
+  ii   engrampa-common  1.26.2-3  all  archive manager for MATE (common files)
+  ii   enum4linux  0.9.1-0kali1  all  Enumerates info from Windows and Samba systems
+  ii   espeak-ng-data  1.51+dfsg-12  amd64  Multi-lingual software speech synthesizer: speech data files
+  ii   ethtool  1:6.7-1  amd64  display or change Ethernet device settings
+  ii   ettercap-common  1:0.8.3.1-13  amd64  Multipurpose sniffer/interceptor/logger for switched LAN
+  ii   ettercap-graphical  1:0.8.3.1-13  amd64  Ettercap GUI-enabled executable
+  ii   evil-winrm  3.5-0kali1  all  ultimate WinRM shell for hacking/pentesting
+  ii   exe2hexbat  1.5.1-0kali2  all  Convert EXE to bat
+  ii   exfatprogs  1.2.2-1  amd64  exFAT file system utilities
+  ii   exiv2  0.27.6-1+b1  amd64  EXIF/IPTC/XMP metadata manipulation tool
+  ii   exo-utils  4.18.0-1+b1  amd64  Utility files for libexo
+  ii   expect  5.45.4-2+b1  amd64  Automates interactive applications
+  ii   exploitdb  20240210-0kali1  all  Searchable Exploit Database archive
+  ii   fakeroot  1.33-1  amd64  tool for simulating superuser privileges
+  ii   faraday  5.1.1-0kali4  all  Collaborative Penetration Test IDE
+  ii   faraday-agent-dispatcher  3.2.1-0kali2  all  helper to develop integrations with Faraday (Python 3)
+  ii   faraday-cli  2.1.8-0kali1  all  Faraday on the terminal
+  ii   fdisk  2.39.3-6  amd64  collection of partitioning utilities
+  ii   fern-wifi-cracker  3.4-0kali1  all  Automated Wi-Fi cracker
+  ii   ffuf  2.1.0-1  amd64  Fast web fuzzer written in Go (program)
+  ii   fierce  1.5.0-1  all  Domain DNS scanner
+  ii   figlet  2.2.5-3+b1  amd64  Make large character ASCII banners out of ordinary text
+  ii   file  1:5.45-2+b1  amd64  Recognize the type of data in a file using ""magic"" numbers
+  ii   findutils  4.9.0-5  amd64  utilities for finding files--find, xargs
+  ii   finger  0.17-17  amd64  user information lookup program
+  ii   firebird3.0-common  3.0.11.33703.ds4-2  all  common files for firebird 3.0 server, client and utilities
+  ii   firebird3.0-common-doc  3.0.11.33703.ds4-2  all  copyright, licensing and changelogs of firebird3.0
+  ii   firefox-esr  115.7.0esr-1  amd64  Mozilla Firefox web browser - Extended Support Release (ESR)
+  ii   firmware-amd-graphics  20230625-2+kali1  all  Binary firmware for AMD/ATI graphics chips
+  ii   firmware-ath9k-htc  1.4.0-108-gd856466+dfsg1-2+kali2  all  firmware for AR7010 and AR9271 USB wireless adapters
+  ii   firmware-atheros  20230625-2+kali1  all  Binary firmware for Qualcomm Atheros wireless cards
+  ii   firmware-brcm80211  20230625-2+kali1  all  Binary firmware for Broadcom/Cypress 802.11 wireless cards
+  ii   firmware-intel-sound  20230625-2+kali1  all  Binary firmware for Intel sound DSPs
+  ii   firmware-iwlwifi  20230625-2+kali1  all  Binary firmware for Intel Wireless cards
+  ii   firmware-libertas  20230625-2+kali1  all  Binary firmware for Marvell wireless cards
+  ii   firmware-linux  20230625-2+kali1  all  Binary firmware for various drivers in the Linux kernel (metapackage)
+  ii   firmware-linux-free  20200122-2  all  Binary firmware for various drivers in the Linux kernel
+  ii   firmware-linux-nonfree  20230625-2+kali1  all  Binary firmware for various drivers in the Linux kernel (metapackage)
+  ii   firmware-misc-nonfree  20230625-2+kali1  all  Binary firmware for various drivers in the Linux kernel
+  ii   firmware-realtek  20230625-2+kali1  all  Binary firmware for Realtek wired/Wi-Fi/BT adapters
+  ii   firmware-sof-signed  2023.12-1  all  Intel SOF firmware - signed
+  ii   firmware-ti-connectivity  20230625-2+kali1  all  Binary firmware for TI Connectivity Wi-Fi and BT/FM/GPS adapters
+  ii   firmware-zd1211  1:1.5-10  all  binary firmware for the zd1211rw wireless driver
+  ii   flac  1.4.3+ds-2+b1  amd64  Free Lossless Audio Codec - command line tools
+  ii   flashrom  1.3.0-2.1+b1  amd64  Identify, read, write, erase, and verify BIOS/ROM/flash chips
+  ii   flex  2.6.4-8.2+b2  amd64  fast lexical analyzer generator
+  ii   fontconfig  2.14.2-6+b1  amd64  generic font configuration library - support binaries
+  ii   fontconfig-config  2.14.2-6+b1  amd64  generic font configuration library - configuration
+  ii   fonts-cantarell  0.303.1-1  all  sans serif font family designed for on-screen readability
+  ii   fonts-dejavu  2.37-8  all  metapackage to pull in fonts-dejavu-core, -mono and -extra
+  ii   fonts-dejavu-core  2.37-8  all  Vera font family derivate with additional characters
+  ii   fonts-dejavu-extra  2.37-8  all  Vera font family derivate with additional characters (extra variants)
+  ii   fonts-dejavu-mono  2.37-8  all  Vera font family derivate with additional characters
+  ii   fonts-droid-fallback  1:6.0.1r16-1.1  all  handheld device font with extensive style and language support (fallback)
+  ii   fonts-firacode  6.2-2  all  Monospaced font with programming ligatures
+  ii   fonts-font-awesome  5.0.10+really4.7.0~dfsg-4.1  all  iconic font designed for use with Twitter Bootstrap
+  ii   fonts-freefont-ttf  20211204+svn4273-2  all  Freefont Serif, Sans and Mono Truetype fonts
+  ii   fonts-hack  3.003-3  all  Typeface designed for source code
+  ii   fonts-lato  2.015-1  all  sans-serif typeface family font
+  ii   fonts-liberation  1:2.1.5-3  all  fonts with the same metrics as Times, Arial and Courier
+  ii   fonts-liberation-sans-narrow  1:1.07.6-4  all  Sans-serif Narrow fonts to replace commonly used Arial Narrow
+  ii   fonts-liberation2  1:2.1.5-3  all  transitional dummy package
+  ii   fonts-lmodern  2.005-1  all  OpenType fonts based on Computer Modern
+  ii   fonts-lyx  2.4.0~RC1-2  all  TrueType versions of some TeX fonts used by LyX
+  ii   fonts-mathjax  2.7.9+dfsg-1  all  JavaScript display engine for LaTeX and MathML (fonts)
+  ii   fonts-noto-color-emoji  2.042-1  all  color emoji font from Google
+  ii   fonts-noto-mono  20201225-2  all  ""No Tofu"" monospaced font family with large Unicode coverage
+  ii   fonts-quicksand  0.2016-2.1  all  sans-serif font with round attributes
+  ii   fonts-texgyre  20180621-6  all  OpenType fonts based on URW Fonts
+  ii   fonts-texgyre-math  20180621-6  all  OpenType math fonts based on URW Fonts
+  ii   fonts-urw-base35  20200910-7  all  font set metric-compatible with the 35 PostScript Level 2 Base Fonts
+  ii   fping  5.1-1  amd64  sends ICMP ECHO_REQUEST packets to network hosts
+  ii   freerdp2-x11  2.11.2+dfsg1-1+b1  amd64  RDP client for Windows Terminal Services (X11 client)
+  ii   freetds-common  1.3.17+ds-2  all  configuration files for FreeTDS SQL client libraries
+  ii   ftp  20230507-2  all  dummy transitional package for tnftp
+  ii   fuse3  3.14.0-5  amd64  Filesystem in Userspace (3.x version)
+  ii   g++  4:13.2.0-7  amd64  GNU C++ compiler
+  ii   g++-13  13.2.0-13  amd64  GNU C++ compiler
+  ii   g++-13-x86-64-linux-gnu  13.2.0-13  amd64  GNU C++ compiler for x86_64-linux-gnu architecture
+  ii   g++-x86-64-linux-gnu  4:13.2.0-7  amd64  GNU C++ compiler for the amd64 architecture
+  ii   galera-4  26.4.16-2+b1  amd64  Replication framework for transactional applications
+  ii   gawk  1:5.2.1-2  amd64  GNU awk, a pattern scanning and processing language
+  ii   gcc  4:13.2.0-7  amd64  GNU C compiler
+  ii   gcc-13  13.2.0-13  amd64  GNU C compiler
+  ii   gcc-13-base  13.2.0-13  amd64  GCC, the GNU Compiler Collection (base package)
+  ii   gcc-13-x86-64-linux-gnu  13.2.0-13  amd64  GNU C compiler for the x86_64-linux-gnu architecture
+  ii   gcc-14-base  14-20240201-3  amd64  GCC, the GNU Compiler Collection (base package)
+  ii   gcc-mingw-w64-base  12.2.0-14+25.2  amd64  GNU Compiler Collection for MinGW-w64 (base package)
+  ii   gcc-mingw-w64-i686-win32  12.2.0-14+25.2  amd64  GNU C compiler for MinGW-w64, Win32/Win32
+  ii   gcc-mingw-w64-i686-win32-runtime  12.2.0-14+25.2  amd64  GNU Compiler Collection for MinGW-w64, i686/Win32
+  ii   gcc-mingw-w64-x86-64-win32  12.2.0-14+25.2  amd64  GNU C compiler for MinGW-w64, Win64/Win32
+  ii   gcc-mingw-w64-x86-64-win32-runtime  12.2.0-14+25.2  amd64  GNU Compiler Collection for MinGW-w64, x86-64/Win32
+  ii   gcc-x86-64-linux-gnu  4:13.2.0-7  amd64  GNU C compiler for the amd64 architecture
+  ii   gcr  3.41.1-4  amd64  GNOME crypto services (daemon and tools)
+  ii   gdal-data  3.8.3+dfsg-1  all  Geospatial Data Abstraction Library - Data files
+  ii   gdal-plugins  3.8.3+dfsg-1  amd64  Geospatial Data Abstraction Library - Plugins
+  ii   gdisk  1.0.9-2.1  amd64  GPT fdisk text-mode partitioning tool
+  ii   geoclue-2.0  2.7.1-2  amd64  geoinformation service
+  ii   geoip-database  20231212-1  all  IP lookup command line tools that use the GeoIP library (country database)
+  ii   gettext-base  0.21-14+b1  amd64  GNU Internationalization utilities for the base system
+  ii   ghostscript  10.02.1~dfsg-3  amd64  interpreter for the PostScript language and for PDF
+  ii   gir1.2-atk-1.0  2.50.0-1+b1  amd64  ATK accessibility toolkit (GObject introspection)
+  ii   gir1.2-atspi-2.0  2.50.0-1+b1  amd64  Assistive Technology Service Provider (GObject introspection)
+  ii   gir1.2-ayatanaappindicator3-0.1  0.5.93-1  amd64  Typelib files for libayatana-appindicator3-1 (GTK-3+ version)
+  ii   gir1.2-freedesktop  1.78.1-15  amd64  Introspection data for some FreeDesktop components
+  ii   gir1.2-gdkpixbuf-2.0  2.42.10+dfsg-3+b1  amd64  GDK Pixbuf library - GObject-Introspection
+  ii   gir1.2-girepository-2.0  1.78.1-15  amd64  Introspection data for GIRepository library
+  ii   gir1.2-glib-2.0  1.78.1-15  amd64  Introspection data for GLib, GObject, Gio and GModule
+  ii   gir1.2-gstreamer-1.0  1.22.9-1+b1  amd64  GObject introspection data for the GStreamer library
+  ii   gir1.2-gtk-3.0  3.24.41-1  amd64  GTK graphical user interface library -- gir bindings
+  ii   gir1.2-harfbuzz-0.0  8.3.0-2  amd64  OpenType text shaping engine (GObject introspection data)
+  ii   gir1.2-nm-1.0  1.44.2-7  amd64  GObject introspection data for the libnm library
+  ii   gir1.2-pango-1.0  1.51.0+ds-4  amd64  Layout and rendering of internationalized text - gir bindings
+  ii   gir1.2-vte-2.91  0.74.2-1  amd64  GObject introspection data for the VTE library
+  ii   gir1.2-wnck-3.0  43.0-3  amd64  GObject introspection data for the WNCK library
+  ii   gir1.2-xfconf-0  4.18.1-1+b1  amd64  utilities for managing settings in Xfce - introspection support
+  ii   git  1:2.43.0-1  amd64  fast, scalable, distributed revision control system
+  ii   git-man  1:2.43.0-1  all  fast, scalable, distributed revision control system (manual pages)
+  ii   glib-networking  2.78.0-1+b1  amd64  network-related giomodules for GLib
+  ii   glib-networking-common  2.78.0-1  all  network-related giomodules for GLib - data files
+  ii   glib-networking-services  2.78.0-1+b1  amd64  network-related giomodules for GLib - D-Bus services
+  ii   gnome-accessibility-themes  3.28-2  all  High Contrast GTK 2 theme and icons
+  ii   gnome-disk-utility  45.1-1  amd64  manage and configure disk drives and media
+  ii   gnome-icon-theme  3.12.0-5  all  This package contains the default icon theme used by the GNOME
+  ii   gnome-keyring  42.1-1+b2  amd64  GNOME keyring services (daemon and tools)
+  ii   gnome-keyring-pkcs11  42.1-1+b2  amd64  GNOME keyring module for the PKCS#11 module loading library
+  ii   gnome-system-tools  3.0.0-9.1  amd64  Cross-platform configuration utilities
+  ii   gnome-themes-extra  3.28-2+b1  amd64  Adwaita GTK 2 theme — engine
+  ii   gnome-themes-extra-data  3.28-2  all  Adwaita GTK 2 theme and Adwaita-dark GTK 3 theme — common files
+  ii   gnupg  2.2.40-1.1  all  GNU privacy guard - a free PGP replacement
+  ii   gnupg-l10n  2.2.40-1.1  all  GNU privacy guard - localization files
+  ii   gnupg-utils  2.2.40-1.1+b1  amd64  GNU privacy guard - utility programs
+  ii   gnutls-bin  3.8.3-1  amd64  GNU TLS library - commandline utilities
+  ii   go-l2tp  0.1.6-2  amd64  L2TP and PPPoE tools built using the go-l2tp package
+  ii   gophish  0.12.1-0kali3  amd64  Open-Source Phishing Toolkit
+  ii   gparted  1.5.0-1  amd64  GNOME partition editor
+  ii   gparted-common  1.5.0-1  all  GNOME partition editor -- common data
+  ii   gpg  2.2.40-1.1+b1  amd64  GNU Privacy Guard -- minimalist public key operations
+  ii   gpg-agent  2.2.40-1.1+b1  amd64  GNU privacy guard - cryptographic agent
+  ii   gpg-wks-client  2.2.40-1.1+b1  amd64  GNU privacy guard - Web Key Service client
+  ii   gpg-wks-server  2.2.40-1.1+b1  amd64  GNU privacy guard - Web Key Service server
+  ii   gpgconf  2.2.40-1.1+b1  amd64  GNU privacy guard - core configuration utilities
+  ii   gpgsm  2.2.40-1.1+b1  amd64  GNU privacy guard - S/MIME version
+  ii   gpgv  2.2.40-1.1+b1  amd64  GNU privacy guard - signature verification tool
+  ii   gpp-decrypt  0.1-1kali2  all  Group Policy Preferences decrypter
+  ii   graphviz  2.42.2-8  amd64  rich set of graph drawing tools
+  ii   greenbone-feed-sync  23.10.0-0kali1  all  New script for syncing the Greenbone Community Feed (Python 3)
+  ii   grep  3.11-4  amd64  GNU grep, egrep and fgrep
+  ii   groff-base  1.23.0-3  amd64  GNU troff text-formatting system (base system components)
+  ii   grub-common  2.12-1+kali1  amd64  GRand Unified Bootloader (common files)
+  ii   grub-pc  2.12-1+kali1  amd64  GRand Unified Bootloader, version 2 (PC/BIOS version)
+  ii   grub-pc-bin  2.12-1+kali1  amd64  GRand Unified Bootloader, version 2 (PC/BIOS modules)
+  ii   grub2-common  2.12-1+kali1  amd64  GRand Unified Bootloader (common files for version 2)
+  ii   gsettings-desktop-schemas  45.0-2  all  GSettings desktop-wide schemas
+  ii   gss-ntlmssp  1.2.0-1+b1  amd64  GSSAPI NTLMSSP Mechanism -- MIT GSSAPI plugin
+  ii   gstreamer1.0-gl  1.22.9-1  amd64  GStreamer plugins for GL
+  ii   gstreamer1.0-libav  1.22.9-1  amd64  ffmpeg plugin for GStreamer
+  ii   gstreamer1.0-plugins-bad  1.22.9-2  amd64  GStreamer plugins from the ""bad"" set
+  ii   gstreamer1.0-plugins-base  1.22.9-1  amd64  GStreamer plugins from the ""base"" set
+  ii   gstreamer1.0-plugins-good  1.22.9-1  amd64  GStreamer plugins from the ""good"" set
+  ii   gstreamer1.0-x  1.22.9-1  amd64  GStreamer plugins for X11 and Pango
+  ii   gtk-update-icon-cache  3.24.41-1  amd64  icon theme caching utility
+  ii   gtk2-engines-pixbuf  2.24.33-3  amd64  pixbuf-based theme for GTK 2
+  ii   gtkhash  1.5-1  amd64  GTK+ utility for computing checksums and more
+  ii   guymager  0.8.13-2  amd64  Forensic imaging tool based on Qt
+  ii   gvfs  1.52.2-1  amd64  userspace virtual filesystem - GIO module
+  ii   gvfs-backends  1.52.2-1  amd64  userspace virtual filesystem - backends
+  ii   gvfs-common  1.52.2-1  all  userspace virtual filesystem - common data files
+  ii   gvfs-daemons  1.52.2-1  amd64  userspace virtual filesystem - servers
+  ii   gvfs-fuse  1.52.2-1  amd64  userspace virtual filesystem - fuse server
+  ii   gvfs-libs  1.52.2-1  amd64  userspace virtual filesystem - private libraries
+  ii   gvmd  23.1.0-1  amd64  Manager Module of Greenbone Vulnerability Manager
+  ii   gvmd-common  23.1.0-1  all  architecture independent files for Greenbone Vulnerability Manager
+  ii   gzip  1.12-1  amd64  GNU compression utilities
+  ii   hash-identifier  1.2+git20180314-0kali2  all  Tool to identify hash types
+  ii   hashcat  6.2.6+ds1-1+b1  amd64  World's fastest and most advanced password recovery utility
+  ii   hashcat-data  6.2.6+ds1-1  all  Data files for hashcat advanced password recovery utility
+  ii   hashcat-utils  1.9-0kali2  amd64  Set of small utilities for advanced password cracking
+  ii   hashdeep  4.4-7.1+b1  amd64  recursively compute hashsums or piecewise hashings
+  ii   hashid  3.1.4-4  all  Identify the different types of hashes used to encrypt data
+  ii   haveged  1.9.14-1+b2  amd64  Linux entropy source using the HAVEGE algorithm
+  ii   hdparm  9.65+ds-1  amd64  tune hard disk parameters for high performance
+  ii   hicolor-icon-theme  0.17-2  all  default fallback theme for FreeDesktop.org icon themes
+  ii   hostname  3.23+nmu2  amd64  utility to set/show the host name or domain name
+  ii   hotpatch  0.2-1kali4  amd64  Hot patches Linux executables with .so file injection
+  ii   hping3  3.a2.ds2-10  amd64  Active Network Smashing Tool
+  ii   hunspell-en-us  1:2020.12.07-2  all  English_american dictionary for hunspell
+  ii   hwloc  2.10.0-1+b1  amd64  Hierarchical view of the machine - utilities
+  ii   hydra  9.5-1  amd64  very fast network logon cracker
+  ii   hydra-gtk  9.5-1  amd64  very fast network logon cracker - GTK+ based GUI
+  ii   hyperion  2.0-0kali4  all  Runtime encrypter for 32-bit portable executables
+  ii   i2c-tools  4.3-4+b2  amd64  heterogeneous set of I2C tools for Linux
+  ii   i965-va-driver  2.4.1+dfsg1-1  amd64  VAAPI driver for Intel G45 & HD Graphics fa","","","","","","None","","IAVT:0001-T-0502","","2006/10/15","2022/09/06","","",""
+"22964","","","None","10.0.2.15","tcp","8834","Service Detection","The remote service could be identified.","Nessus was able to identify the remote service by its banner or by
+looking at the error message it sends when it receives an HTTP
+request.","n/a","","A TLSv1.2 server answered on this port.
+","","","","","","None","","","","2007/08/19","2024/03/26","","",""
+"22964","","","None","10.0.2.15","tcp","8834","Service Detection","The remote service could be identified.","Nessus was able to identify the remote service by its banner or by
+looking at the error message it sends when it receives an HTTP
+request.","n/a","","A web server is running on this port through TLSv1.2.","","","","","","None","","","","2007/08/19","2024/03/26","","",""
+"24260","","","None","10.0.2.15","tcp","8834","HyperText Transfer Protocol (HTTP) Information","Some information about the remote HTTP configuration can be extracted.","This test gives some information about the remote HTTP protocol - the
+version used, whether HTTP Keep-Alive is enabled, etc... 
+
+This test is informational only and does not denote any security
+problem.","n/a","","
+Response Code : HTTP/1.1 200 OK
+
+Protocol version : HTTP/1.1
+HTTP/2 TLS Support: No
+HTTP/2 Cleartext Support: No
+SSL : yes
+Keep-Alive : no
+Options allowed : (Not implemented)
+Headers :
+
+  Cache-Control: must-revalidate
+  X-Frame-Options: DENY
+  Content-Type: text/html
+  ETag: 2cd63fa8bc7c722fb6588d58f5ab98b5
+  Connection: close
+  X-XSS-Protection: 1; mode=block
+  Server: NessusWWW
+  Date: Fri, 03 May 2024 01:10:34 GMT
+  X-Content-Type-Options: nosniff
+  Content-Length: 1217
+  Content-Security-Policy: upgrade-insecure-requests; block-all-mixed-content; form-action 'self'; frame-ancestors 'none'; frame-src https://store.tenable.com; default-src 'self'; connect-src 'self' www.tenable.com; script-src 'self' www.tenable.com; img-src 'self' data:; style-src 'self' www.tenable.com; object-src 'none'; base-uri 'self';
+  Strict-Transport-Security: max-age=31536000
+  Expect-CT: max-age=0
+  
+Response Body :
+
+<!doctype html>
+<html lang=""en"">
+    <head>
+        <meta http-equiv=""X-UA-Compatible"" content=""IE=edge,chrome=1"" />
+        <meta http-equiv=""Content-Security-Policy"" content=""upgrade-insecure-requests; block-all-mixed-content; form-action 'self'; frame-src https://store.tenable.com; default-src 'self'; connect-src 'self' www.tenable.com; script-src 'self' www.tenable.com; img-src 'self' data:; style-src 'self' www.tenable.com; object-src 'none'; base-uri 'self';"" />
+        <meta name=""viewport"" content=""width=device-width, initial-scale=1"">
+        <meta charset=""utf-8"" />
+        <title>Nessus</title>
+        <link rel=""stylesheet"" href=""nessus6.css?v=1711560262479"" id=""theme-link"" />
+        <link rel=""stylesheet"" href=""tenable_links.css?v=ac05d80f1e3731b79d12103cdf9367fc"" />
+        <link rel=""stylesheet"" href=""wizard_templates.css?v=11939be86ca24a4dbbe8f9b85f95e140"" />
+        <!--[if lt IE 11]>
+            <script>
+                window.location = '/unsupported6.html';
+            </script>
+        <![endif]-->
+        <script src=""nessus6.js?v=1711560262479""></script>
+        <script src=""pendo-client.js""></script>
+        <!--Resource-Script-->
+    </head>
+    <body>
+    </body>
+</html>
+","","","","","","None","","","","2007/01/30","2024/02/26","","",""
+"25202","","","None","10.0.2.15","tcp","0","Enumerate IPv6 Interfaces via SSH","Nessus was able to enumerate the IPv6 interfaces on the remote host.","Nessus was able to enumerate the network interfaces configured with
+IPv6 addresses by connecting to the remote host via SSH using the
+supplied credentials.","Disable IPv6 if you are not actually using it. Otherwise, disable any
+unused IPv6 interfaces.","","
+The following IPv6 interfaces are set on the remote host :
+
+ - fe80::6ed7:9275:c8f:c8a8 (on interface eth0)
+ - ::1 (on interface lo)
+","","","","","","None","","","","2007/05/11","2022/02/23","","",""
+"25203","","","None","10.0.2.15","tcp","0","Enumerate IPv4 Interfaces via SSH","Nessus was able to enumerate the IPv4 interfaces on the remote host.","Nessus was able to enumerate the network interfaces configured with
+IPv4 addresses by connecting to the remote host via SSH using the
+supplied credentials.","Disable any unused IPv4 interfaces.","","
+The following IPv4 addresses are set on the remote host :
+
+ - 10.0.2.15 (on interface eth0)
+ - 127.0.0.1 (on interface lo)
+","","","","","","None","","","","2007/05/11","2024/02/05","","",""
+"33276","","","None","10.0.2.15","tcp","0","Enumerate MAC Addresses via SSH","Nessus was able to enumerate MAC addresses on the remote host.","Nessus was able to enumerate MAC addresses by connecting to the remote
+host via SSH with the supplied credentials.","Disable any unused interfaces.","","
+The following MAC address exists on the remote host :
+
+  - 08:00:27:1e:36:4a (interface eth0)
+","","","","","","None","","","","2008/06/30","2022/12/20","","",""
+"35716","","","None","10.0.2.15","tcp","0","Ethernet Card Manufacturer Detection","The manufacturer can be identified from the Ethernet OUI.","Each ethernet MAC address starts with a 24-bit Organizationally 
+Unique Identifier (OUI). These OUIs are registered by IEEE.","n/a","https://standards.ieee.org/faqs/regauth.html
+http://www.nessus.org/u?794673b4","
+The following card manufacturers were identified :
+
+08:00:27:1E:36:4A : PCS Systemtechnik GmbH
+","","","","","","None","","","","2009/02/19","2020/05/13","","",""
+"42822","","","None","10.0.2.15","tcp","8834","Strict Transport Security (STS) Detection","The remote web server implements Strict Transport Security.","The remote web server implements Strict Transport Security (STS).
+The goal of STS is to make sure that a user does not accidentally
+downgrade the security of his or her browser.
+
+All unencrypted HTTP connections are redirected to HTTPS.  The browser
+is expected to treat all cookies as 'secure' and to close the
+connection in the event of potentially insecure situations.","n/a","http://www.nessus.org/u?2fb3aca6","
+The STS header line is :
+
+Strict-Transport-Security: max-age=31536000
+","","","","","","None","","","","2009/11/16","2019/11/22","","",""
+"45405","","","None","10.0.2.15","tcp","0","Reachable IPv6 address","The remote host may be reachable from the Internet.","Although this host was scanned through a private IPv4 or local scope
+IPv6 address, some network interfaces are configured with global scope
+IPv6 addresses.  Depending on the configuration of the firewalls and
+routers, this host may be reachable from Internet.","Disable IPv6 if you do not actually using it. 
+
+Otherwise, disable any unused IPv6 interfaces and implement IP
+filtering if needed.","","
+The following global addresss were gathered :
+
+  - ['ipv6': fe80::6ed7:9275:c8f:c8a8]['scope': link]['scopeid': 0x20]['prefixlen': 64]
+  - ['ipv6': ::1]['scope': host]['scopeid': 0x10]['prefixlen': 128]
+","","","","","","None","","","","2010/04/02","2012/08/07","","",""
+"45590","","","None","10.0.2.15","tcp","0","Common Platform Enumeration (CPE)","It was possible to enumerate CPE names that matched on the remote
+system.","By using information obtained from a Nessus scan, this plugin reports
+CPE (Common Platform Enumeration) matches for various hardware and
+software products found on a host. 
+
+Note that if an official CPE is not available for the product, this
+plugin computes the best possible CPE based on the information
+available from the scan.","n/a","http://cpe.mitre.org/
+https://nvd.nist.gov/products/cpe","
+The remote operating system matched the following CPE : 
+
+  cpe:/o:linux:linux_kernel -> Linux Kernel
+
+Following application CPE's matched on the remote system : 
+
+  cpe:/a:apache:http_server:2.4.58 -> Apache Software Foundation Apache HTTP Server
+  cpe:/a:gnupg:libgcrypt:1.10.3 -> GnuPG Libgcrypt
+  cpe:/a:haxx:curl:8.5.0 -> Haxx Curl
+  cpe:/a:haxx:libcurl:8.5.0 -> Haxx libcurl
+  cpe:/a:jmcnamara:spreadsheet%3a%3aparseexcel:0.66
+  cpe:/a:nginx:nginx:1.24.0 -> Nginx
+  cpe:/a:nodejs:node.js:18.19.1 -> Nodejs Node.js
+  cpe:/a:openssl:openssl:3.0.13 -> OpenSSL Project OpenSSL
+  cpe:/a:openssl:openssl:3.1.4 -> OpenSSL Project OpenSSL
+  cpe:/a:oracle:openjdk:1.17.0_10 -> Oracle OpenJDK -
+  cpe:/a:postgresql:postgresql:16.1 -> PostgreSQL
+  cpe:/a:sqlite:sqlite -> SQLite
+  cpe:/a:tenable:nessus -> Tenable Nessus
+  cpe:/a:tenable:nessus:10.7.2 -> Tenable Nessus
+  cpe:/a:tukaani:xz:5.4.5 -> Tukaani XZ
+  cpe:/a:vim:vim:9.1 -> Vim
+  x-cpe:/a:java:jre:1.17.0_10
+","","","","","","None","","","","2010/04/21","2024/04/23","","",""
+"51192","","6.4","Medium","10.0.2.15","tcp","8834","SSL Certificate Cannot Be Trusted","The SSL certificate for this service cannot be trusted.","The server's X.509 certificate cannot be trusted. This situation can
+occur in three different ways, in which the chain of trust can be
+broken, as stated below :
+
+  - First, the top of the certificate chain sent by the
+    server might not be descended from a known public
+    certificate authority. This can occur either when the
+    top of the chain is an unrecognized, self-signed
+    certificate, or when intermediate certificates are
+    missing that would connect the top of the certificate
+    chain to a known public certificate authority.
+
+  - Second, the certificate chain may contain a certificate
+    that is not valid at the time of the scan. This can
+    occur either when the scan occurs before one of the
+    certificate's 'notBefore' dates, or after one of the
+    certificate's 'notAfter' dates.
+
+  - Third, the certificate chain may contain a signature
+    that either didn't match the certificate's information
+    or could not be verified. Bad signatures can be fixed by
+    getting the certificate with the bad signature to be
+    re-signed by its issuer. Signatures that could not be
+    verified are the result of the certificate's issuer
+    using a signing algorithm that Nessus either does not
+    support or does not recognize.
+
+If the remote host is a public host in production, any break in the
+chain makes it more difficult for users to verify the authenticity and 
+identity of the web server. This could make it easier to carry out 
+man-in-the-middle attacks against the remote host.","Purchase or generate a proper SSL certificate for this service.","https://www.itu.int/rec/T-REC-X.509/en
+https://en.wikipedia.org/wiki/X.509","
+The following certificate was at the top of the certificate
+chain sent by the remote host, but it is signed by an unknown
+certificate authority :
+
+|-Subject : O=Nessus Users United/OU=Nessus Server/L=New York/C=US/ST=NY/CN=kali
+|-Issuer  : O=Nessus Users United/OU=Nessus Certification Authority/L=New York/C=US/ST=NY/CN=Nessus Certification Authority
+","","6.5","","","","Medium","","","","2010/12/15","2020/04/27","","",""
+"54615","","","None","10.0.2.15","tcp","0","Device Type","It is possible to guess the remote device type.","Based on the remote operating system, it is possible to determine
+what the remote system type is (eg: a printer, router, general-purpose
+computer, etc).","n/a","","Remote device type : general-purpose
+Confidence level : 99
+","","","","","","None","","","","2011/05/23","2022/09/09","","",""
+"55472","","","None","10.0.2.15","tcp","0","Device Hostname","It was possible to determine the remote system hostname.","This plugin reports a device's hostname collected via SSH or WMI.","n/a","","
+  Hostname : kali
+    kali (hostname command)","","","","","","None","","","","2011/06/30","2024/04/23","","",""
+"56468","","","None","10.0.2.15","tcp","0","Time of Last System Startup","The system has been started.","Using the supplied credentials, Nessus was able to determine when the
+host was last started.","n/a","","
+  reboot   system boot  6.6.9-amd64      Sat Apr 20 12:01   still running
+  reboot   system boot  6.6.9-amd64      Sat Apr 20 11:10   still running
+  reboot   system boot  6.6.9-amd64      Wed Apr 17 23:32   still running
+  reboot   system boot  6.6.9-amd64      Wed Apr 17 23:28 - 23:31  (00:03)
+  reboot   system boot  6.6.9-amd64      Wed Apr 17 23:08 - 23:31  (00:23)
+  reboot   system boot  6.6.9-amd64      Tue Apr 16 23:39 - 23:31  (23:52)
+  reboot   system boot  6.6.9-amd64      Mon Apr 15 22:41 - 23:31 (2+00:50)
+  reboot   system boot  6.6.9-amd64      Mon Apr 15 22:38 - 23:31 (2+00:53)
+  reboot   system boot  6.6.9-amd64      Mon Apr 15 22:27 - 23:31 (2+01:04)
+  reboot   system boot  6.6.9-amd64      Mon Apr 15 22:23 - 23:31 (2+01:08)
+  reboot   system boot  6.6.9-amd64      Mon Apr 15 22:17 - 23:31 (2+01:14)
+  reboot   system boot  6.6.9-amd64      Thu Apr 11 10:37 - 23:31 (6+12:54)
+  reboot   system boot  6.6.9-amd64      Thu Mar  7 05:01 - 23:31 (41+17:29)
+  reboot   system boot  6.6.9-amd64      Wed Mar  6 21:26 - 22:54 (19+00:28)
+  
+  wtmp begins Wed Mar  6 21:26:48 2024","","","","","","None","","","","2011/10/12","2018/06/19","","",""
+"56984","","","None","10.0.2.15","tcp","8834","SSL / TLS Versions Supported","The remote service encrypts communications.","This plugin detects which SSL and TLS versions are supported by the
+remote service for encrypting communications.","n/a","","
+This port supports TLSv1.3/TLSv1.2.
+","","","","","","None","","","","2011/12/01","2023/07/10","","",""
+"57041","","","None","10.0.2.15","tcp","8834","SSL Perfect Forward Secrecy Cipher Suites Supported","The remote service supports the use of SSL Perfect Forward Secrecy
+ciphers, which maintain confidentiality even if the key is stolen.","The remote host supports the use of SSL ciphers that offer Perfect
+Forward Secrecy (PFS) encryption.  These cipher suites ensure that
+recorded SSL traffic cannot be broken at a future date if the server's
+private key is compromised.","n/a","https://www.openssl.org/docs/manmaster/man1/ciphers.html
+https://en.wikipedia.org/wiki/Diffie-Hellman_key_exchange
+https://en.wikipedia.org/wiki/Perfect_forward_secrecy","
+Here is the list of SSL PFS ciphers supported by the remote server :
+
+  High Strength Ciphers (>= 112-bit key)
+
+    Name                          Code             KEX           Auth     Encryption             MAC
+    ----------------------        ----------       ---           ----     ---------------------  ---
+    ECDHE-RSA-AES128-SHA256       0xC0, 0x2F       ECDH          RSA      AES-GCM(128)           SHA256
+    ECDHE-RSA-AES256-SHA384       0xC0, 0x30       ECDH          RSA      AES-GCM(256)           SHA384
+
+The fields above are :
+
+  {Tenable ciphername}
+  {Cipher ID code}
+  Kex={key exchange}
+  Auth={authentication}
+  Encrypt={symmetric encryption method}
+  MAC={message authentication code}
+  {export flag}
+","","","","","","None","","","","2011/12/07","2021/03/09","","",""
+"64582","","","None","10.0.2.15","tcp","0","Netstat Connection Information","Nessus was able to parse the results of the 'netstat' command on the
+remote host.","The remote host has listening ports or established connections that
+Nessus was able to extract from the results of the 'netstat' command.
+
+Note: The output for this plugin can be very long, and is not shown by default. To display it, enable verbose reporting in scan settings.","n/a","","","","","","","","None","","","","2013/02/13","2023/05/23","","",""
+"66334","","","None","10.0.2.15","tcp","0","Patch Report","The remote host is missing several patches.","The remote host is missing one or more security patches. This plugin lists the newest version of each patch to install 
+to make sure the remote host is up-to-date.
+
+Note: Because the 'Show missing patches that have been superseded' setting in your scan policy depends on this plugin,
+it will always run and cannot be disabled.","Install the patches listed below.","","
+
+. You need to take the following action :
+
+[ OpenJDK 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 / 21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0 Multiple Vulnerabilities (2024-04-16 (193405) ]
+
++ Action to take : Upgrade to an OpenJDK version greater than 8u402 / 11.0.22 / 17.0.10 / 21.0.2 / 22.0.0
+
+
+","","","","","","None","","","","2013/07/08","2024/04/09","","",""
+"86420","","","None","10.0.2.15","tcp","0","Ethernet MAC Addresses","This plugin gathers MAC addresses from various sources and
+consolidates them into a list.","This plugin gathers MAC addresses discovered from both remote probing
+of the host (e.g. SNMP and Netbios) and from running local checks
+(e.g. ifconfig). It then consolidates the MAC addresses into a single,
+unique, and uniform list.","n/a","","The following is a consolidated list of detected MAC addresses:
+  - 08:00:27:1E:36:4A
+","","","","","","None","","","","2015/10/16","2020/05/13","","",""
+"95928","","","None","10.0.2.15","tcp","0","Linux User List Enumeration","Nessus was able to enumerate local users and groups on the remote Linux host.","Using the supplied credentials, Nessus was able to enumerate the local users and groups on the remote Linux host.","None","","
+-----------[ User Accounts ]-----------
+
+User         : kali
+Home folder  : /home/kali
+Start script : /usr/bin/zsh
+Groups       : kali
+               dip
+               scanner
+               netdev
+               users
+               dialout
+               wireshark
+               video
+               vboxsf
+               cdrom
+               adm
+               audio
+               sudo
+               kaboxer
+               bluetooth
+               plugdev
+               floppy
+
+----------[ System Accounts ]----------
+
+User         : root
+Home folder  : /root
+Start script : /usr/bin/zsh
+Groups       : root
+
+User         : daemon
+Home folder  : /usr/sbin
+Start script : /usr/sbin/nologin
+Groups       : daemon
+
+User         : bin
+Home folder  : /bin
+Start script : /usr/sbin/nologin
+Groups       : bin
+
+User         : sys
+Home folder  : /dev
+Start script : /usr/sbin/nologin
+Groups       : sys
+
+User         : sync
+Home folder  : /bin
+Start script : /bin/sync
+Groups       : nogroup
+
+User         : games
+Home folder  : /usr/games
+Start script : /usr/sbin/nologin
+Groups       : games
+
+User         : man
+Home folder  : /var/cache/man
+Start script : /usr/sbin/nologin
+Groups       : man
+
+User         : lp
+Home folder  : /var/spool/lpd
+Start script : /usr/sbin/nologin
+Groups       : lp
+
+User         : mail
+Home folder  : /var/mail
+Start script : /usr/sbin/nologin
+Groups       : mail
+
+User         : news
+Home folder  : /var/spool/news
+Start script : /usr/sbin/nologin
+Groups       : news
+
+User         : uucp
+Home folder  : /var/spool/uucp
+Start script : /usr/sbin/nologin
+Groups       : uucp
+
+User         : proxy
+Home folder  : /bin
+Start script : /usr/sbin/nologin
+Groups       : proxy
+
+User         : www-data
+Home folder  : /var/www
+Start script : /usr/sbin/nologin
+Groups       : www-data
+
+User         : backup
+Home folder  : /var/backups
+Start script : /usr/sbin/nologin
+Groups       : backup
+
+User         : list
+Home folder  : /var/list
+Start script : /usr/sbin/nologin
+Groups       : list
+
+User         : irc
+Home folder  : /run/ircd
+Start script : /usr/sbin/nologin
+Groups       : irc
+
+User         : _apt
+Home folder  : /nonexistent
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : nobody
+Home folder  : /nonexistent
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : systemd-network
+Home folder  : /
+Start script : /usr/sbin/nologin
+Groups       : systemd-network
+
+User         : systemd-timesync
+Home folder  : /
+Start script : /usr/sbin/nologin
+Groups       : systemd-timesync
+
+User         : messagebus
+Home folder  : /nonexistent
+Start script : /usr/sbin/nologin
+Groups       : messagebus
+
+User         : tss
+Home folder  : /var/lib/tpm
+Start script : /bin/false
+Groups       : tss
+
+User         : strongswan
+Home folder  : /var/lib/strongswan
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : tcpdump
+Home folder  : /nonexistent
+Start script : /usr/sbin/nologin
+Groups       : tcpdump
+
+User         : usbmux
+Home folder  : /var/lib/usbmux
+Start script : /usr/sbin/nologin
+Groups       : plugdev
+
+User         : sshd
+Home folder  : /run/sshd
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : dnsmasq
+Home folder  : /var/lib/misc
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : avahi
+Home folder  : /run/avahi-daemon
+Start script : /usr/sbin/nologin
+Groups       : avahi
+
+User         : speech-dispatcher
+Home folder  : /run/speech-dispatcher
+Start script : /bin/false
+Groups       : audio
+
+User         : pulse
+Home folder  : /run/pulse
+Start script : /usr/sbin/nologin
+Groups       : pulse
+               audio
+
+User         : lightdm
+Home folder  : /var/lib/lightdm
+Start script : /bin/false
+Groups       : lightdm
+
+User         : saned
+Home folder  : /var/lib/saned
+Start script : /usr/sbin/nologin
+Groups       : saned
+               scanner
+
+User         : polkitd
+Home folder  : /
+Start script : /usr/sbin/nologin
+Groups       : polkitd
+
+User         : rtkit
+Home folder  : /proc
+Start script : /usr/sbin/nologin
+Groups       : rtkit
+
+User         : colord
+Home folder  : /var/lib/colord
+Start script : /usr/sbin/nologin
+Groups       : colord
+
+User         : nm-openvpn
+Home folder  : /var/lib/openvpn/chroot
+Start script : /usr/sbin/nologin
+Groups       : nm-openvpn
+
+User         : nm-openconnect
+Home folder  : /var/lib/NetworkManager
+Start script : /usr/sbin/nologin
+Groups       : nm-openconnect
+
+User         : _galera
+Home folder  : /nonexistent
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : mysql
+Home folder  : /nonexistent
+Start script : /bin/false
+Groups       : mysql
+
+User         : stunnel4
+Home folder  : /var/run/stunnel4
+Start script : /usr/sbin/nologin
+Groups       : stunnel4
+
+User         : _rpc
+Home folder  : /run/rpcbind
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : geoclue
+Home folder  : /var/lib/geoclue
+Start script : /usr/sbin/nologin
+Groups       : geoclue
+
+User         : Debian-snmp
+Home folder  : /var/lib/snmp
+Start script : /bin/false
+Groups       : Debian-snmp
+
+User         : sslh
+Home folder  : /nonexistent
+Start script : /usr/sbin/nologin
+Groups       : sslh
+
+User         : ntpsec
+Home folder  : /nonexistent
+Start script : /usr/sbin/nologin
+Groups       : ntpsec
+
+User         : redsocks
+Home folder  : /var/run/redsocks
+Start script : /usr/sbin/nologin
+Groups       : redsocks
+
+User         : rwhod
+Home folder  : /var/spool/rwho
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : _gophish
+Home folder  : /var/lib/gophish
+Start script : /usr/sbin/nologin
+Groups       : _gophish
+
+User         : iodine
+Home folder  : /run/iodine
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : miredo
+Home folder  : /var/run/miredo
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : statd
+Home folder  : /var/lib/nfs
+Start script : /usr/sbin/nologin
+Groups       : nogroup
+
+User         : redis
+Home folder  : /var/lib/redis
+Start script : /usr/sbin/nologin
+Groups       : redis
+
+User         : postgres
+Home folder  : /var/lib/postgresql
+Start script : /bin/bash
+Groups       : postgres
+               ssl-cert
+
+User         : mosquitto
+Home folder  : /var/lib/mosquitto
+Start script : /usr/sbin/nologin
+Groups       : mosquitto
+
+User         : inetsim
+Home folder  : /var/lib/inetsim
+Start script : /usr/sbin/nologin
+Groups       : inetsim
+
+User         : _gvm
+Home folder  : /var/lib/openvas
+Start script : /usr/sbin/nologin
+Groups       : _gvm
+               redis
+
+","","","","","","None","","","","2016/12/19","2024/03/13","","",""
+"97993","","","None","10.0.2.15","tcp","0","OS Identification and Installed Software Enumeration over SSH v2 (Using New SSH Library)","Information about the remote host can be disclosed via an
+authenticated session.","Nessus was able to login to the remote host using SSH or local
+commands and extract the list of installed packages.","n/a","","
+Nessus can run commands on localhost to check if patches are applied.
+
+The output of ""uname -a"" is :
+Linux kali 6.6.9-amd64 #1 SMP PREEMPT_DYNAMIC Kali 6.6.9-1kali1 (2024-01-08) x86_64 GNU/Linux
+
+Local checks have been enabled for this host.
+The remote Debian system is :
+kali-rolling
+
+This is a Kali Linux system
+
+OS Security Patch Assessment is available for this host.
+Runtime : 1.301928 seconds
+","","","","","","None","","","","2017/05/30","2024/03/19","","",""
+"110095","","","None","10.0.2.15","tcp","0","Target Credential Issues by Authentication Protocol - No Issues Found","Nessus was able to log in to the remote host using the provided
+credentials. No issues were reported with access, privilege, or
+intermittent failure.","Valid credentials were provided for an authentication protocol on the
+remote target and Nessus did not log any subsequent errors or failures
+for the authentication protocol.
+
+When possible, Nessus tracks errors or failures related to otherwise
+valid credentials in order to highlight issues that may result in
+incomplete scan results or limited scan coverage. The types of issues
+that are tracked include errors that indicate that the account used
+for scanning did not have sufficient permissions for a particular
+check, intermittent protocol failures which are unexpected after the
+protocol has been negotiated successfully earlier in the scan, and
+intermittent authentication failures which are unexpected after a
+credential set has been accepted as valid earlier in the scan. This
+plugin reports when none of the above issues have been logged during
+the course of the scan for at least one authenticated protocol. See
+plugin output for details, including protocol, port, and account.
+
+Please note the following :
+
+- This plugin reports per protocol, so it is possible for
+  issues to be encountered for one protocol and not another.
+  For example, authentication to the SSH service on the
+  remote target may have consistently succeeded with no
+  privilege errors encountered, while connections to the SMB
+  service on the remote target may have failed
+  intermittently.
+
+- Resolving logged issues for all available authentication
+  protocols may improve scan coverage, but the value of
+  resolving each issue for a particular protocol may vary
+  from target to target depending upon what data (if any) is
+  gathered from the target via that protocol and what
+  particular check failed. For example, consistently
+  successful checks via SSH are more critical for Linux
+  targets than for Windows targets, and likewise
+  consistently successful checks via SMB are more critical
+  for Windows targets than for Linux targets.","n/a","","Nessus was able to execute commands locally with sufficient privileges
+for all planned checks.
+
+","","","","","","None","","IAVB:0001-B-0520","","2018/05/24","2024/03/25","","",""
+"110483","","","None","10.0.2.15","tcp","0","Unix / Linux Running Processes Information","Uses /bin/ps auxww command to obtain the list of running processes on the target machine at scan time.","Generated report details the running processes on the target machine at scan time.
+  This plugin is informative only and could be used for forensic
+  investigation, malware detection, and to confirm that your system
+  processes conform to your system policies.","n/a","","USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.2  22628 13264 ?        Ss   12:55   0:02 /sbin/init splash
+root           2  0.0  0.0      0     0 ?        S    12:55   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    12:55   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-rcu_g]
+root           5  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-rcu_p]
+root           6  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-slub_]
+root           7  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-netns]
+root          12  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-mm_pe]
+root          13  0.0  0.0      0     0 ?        I    12:55   0:00 [rcu_tasks_kthread]
+root          14  0.0  0.0      0     0 ?        I    12:55   0:00 [rcu_tasks_rude_kthread]
+root          15  0.0  0.0      0     0 ?        I    12:55   0:00 [rcu_tasks_trace_kthread]
+root          16  0.0  0.0      0     0 ?        S    12:55   0:03 [ksoftirqd/0]
+root          17  0.0  0.0      0     0 ?        I    12:55   0:14 [rcu_preempt]
+root          18  0.0  0.0      0     0 ?        S    12:55   0:00 [migration/0]
+root          19  0.0  0.0      0     0 ?        S    12:55   0:00 [idle_inject/0]
+root          20  0.0  0.0      0     0 ?        S    12:55   0:00 [cpuhp/0]
+root          21  0.0  0.0      0     0 ?        S    12:55   0:00 [cpuhp/1]
+root          22  0.0  0.0      0     0 ?        S    12:55   0:00 [idle_inject/1]
+root          23  0.0  0.0      0     0 ?        S    12:55   0:00 [migration/1]
+root          24  0.0  0.0      0     0 ?        S    12:55   0:03 [ksoftirqd/1]
+root          31  0.0  0.0      0     0 ?        S    12:55   0:00 [kdevtmpfs]
+root          32  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-inet_]
+root          33  0.0  0.0      0     0 ?        S    12:55   0:00 [kauditd]
+root          35  0.0  0.0      0     0 ?        S    12:55   0:00 [khungtaskd]
+root          36  0.0  0.0      0     0 ?        S    12:55   0:00 [oom_reaper]
+root          38  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-write]
+root          39  0.0  0.0      0     0 ?        S    12:55   0:03 [kcompactd0]
+root          40  0.0  0.0      0     0 ?        SN   12:55   0:00 [ksmd]
+root          41  0.0  0.0      0     0 ?        SN   12:55   0:01 [khugepaged]
+root          42  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-kinte]
+root          43  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-kbloc]
+root          44  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-blkcg]
+root          46  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-tpm_d]
+root          47  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-edac-]
+root          48  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-devfr]
+root          50  0.0  0.0      0     0 ?        S    12:55   0:04 [kswapd0]
+root          57  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-kthro]
+root          59  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-acpi_]
+root          60  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-mld]
+root          61  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-ipv6_]
+root          66  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-kstrp]
+root          68  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/u7:0]
+root          69  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/u8:0]
+root          70  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/u9:0]
+root         175  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-crypt]
+root         178  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-ata_s]
+root         181  0.0  0.0      0     0 ?        S    12:55   0:00 [scsi_eh_0]
+root         182  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-scsi_]
+root         183  0.0  0.0      0     0 ?        S    12:55   0:00 [scsi_eh_1]
+root         184  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-scsi_]
+root         188  0.0  0.0      0     0 ?        S    12:55   0:00 [scsi_eh_2]
+root         190  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-scsi_]
+root         193  0.0  0.0      0     0 ?        S    12:55   0:00 [irq/18-vmwgfx]
+root         195  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-ttm]
+root         289  0.0  0.0      0     0 ?        S    12:55   0:01 [jbd2/sda1-8]
+root         290  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-ext4-]
+root         390  0.0  0.0      0     0 ?        I    12:55   0:02 [kworker/u4:1-ext4-rsv-conversion]
+root         527  0.0  0.0   8264  5184 ?        Ss   12:55   0:00 /usr/sbin/haveged --Foreground --verbose=1
+root         567  0.0  0.1 310908  9564 ?        Ssl  12:55   0:00 /usr/libexec/accounts-daemon
+message+     569  0.0  0.1  10784  6016 ?        Ss   12:55   0:12 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+polkitd      571  0.0  0.1 387840 11312 ?        Ssl  12:55   0:02 /usr/lib/polkit-1/polkitd --no-debug
+root         578  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-rpcio]
+root         579  0.0  0.0      0     0 ?        I<   12:55   0:00 [kworker/R-xprti]
+root         583  0.0  0.0   6640  2560 ?        Ss   12:55   0:00 /usr/sbin/cron -f
+root         588  0.0  0.3 333928 22096 ?        Ssl  12:55   0:00 /usr/sbin/NetworkManager --no-daemon
+root         622  0.0  0.2 392156 14408 ?        Ssl  12:55   0:00 /usr/sbin/ModemManager
+root         629  0.0  0.0 358552  3588 ?        Sl   12:55   0:04 /usr/sbin/VBoxService
+root         660  0.0  0.1 382300  7176 ?        SLsl 12:55   0:00 /usr/sbin/lightdm
+root         684  9.5  3.3 511388 195928 tty7    Ssl+ 12:55  47:32 /usr/lib/xorg/Xorg :0 -seat seat0 -auth /var/run/lightdm/root/:0 -nolisten tcp vt7 -novtswitch
+root         687  0.0  0.0   5896  1920 tty1     Ss+  12:55   0:00 /sbin/agetty -o -p -- \u --noclear - linux
+rtkit        732  0.0  0.0  88348  3072 ?        SNsl 12:55   0:00 /usr/libexec/rtkit-daemon
+root         802  0.0  0.1 236268  9852 ?        Sl   12:55   0:00 lightdm --session-child 13 24
+kali         809  0.0  0.1  20832 11392 ?        Ss   12:55   0:00 /usr/lib/systemd/systemd --user
+kali         810  0.0  0.0  21480  3252 ?        S    12:55   0:00 (sd-pam)
+kali         825  0.0  0.2 121444 17432 ?        Ssl  12:55   0:05 /usr/bin/pipewire
+kali         827  0.0  0.0  95228  5888 ?        Ssl  12:55   0:00 /usr/bin/pipewire -c filter-chain.conf
+kali         828  0.0  0.6 574888 38376 ?        Ssl  12:55   0:00 /usr/bin/wireplumber
+kali         829  0.0  0.3 118496 22000 ?        Ssl  12:55   0:06 /usr/bin/pipewire-pulse
+kali         831  0.0  0.2 314296 12108 ?        SLsl 12:55   0:00 /usr/bin/gnome-keyring-daemon --foreground --components=pkcs11,secrets --control-directory=/run/user/1000/keyring
+kali         832  0.0  0.0  10028  5752 ?        Ss   12:55   0:01 /usr/bin/dbus-daemon --session --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+kali         849  0.0  0.5 342228 29776 ?        Ssl  12:55   0:04 xfce4-session
+kali         911  0.0  0.0  19172  1408 ?        S    12:55   0:00 /usr/bin/VBoxClient --clipboard
+kali         913  0.0  0.0 217360  3968 ?        Sl   12:55   0:00 /usr/bin/VBoxClient --clipboard
+kali         926  0.0  0.0  19172  1536 ?        S    12:55   0:00 /usr/bin/VBoxClient --seamless
+kali         927  0.0  0.0 217468  3200 ?        Sl   12:55   0:17 /usr/bin/VBoxClient --seamless
+kali         934  0.0  0.0  19172  1536 ?        S    12:55   0:00 /usr/bin/VBoxClient --draganddrop
+kali         935  0.1  0.0 217984  2816 ?        Sl   12:55   0:48 /usr/bin/VBoxClient --draganddrop
+kali         947  0.0  0.0   8600  1396 ?        Ss   12:55   0:00 /usr/bin/ssh-agent x-session-manager
+kali         957  0.0  0.2 385136 11876 ?        Ssl  12:55   0:00 /usr/libexec/at-spi-bus-launcher
+kali         964  0.0  0.0   9420  4864 ?        S    12:55   0:00 /usr/bin/dbus-daemon --config-file=/usr/share/defaults/at-spi2/accessibility.conf --nofork --print-address 11 --address=unix:path=/run/user/1000/at-spi/bus_0
+kali         976  0.0  0.1 238384 10064 ?        Sl   12:55   0:02 /usr/libexec/at-spi2-registryd --use-gnome-session
+kali         988  0.0  0.0  81272  5328 ?        SLs  12:55   0:00 /usr/bin/gpg-agent --supervised
+kali         990  8.2  2.1 988892 128428 ?       Sl   12:55  40:49 xfwm4 --display :0.0 --sm-client-id 2d38bb2d7-5e42-425c-adf9-5b44544b414f
+kali         994  0.0  0.1 311856  9716 ?        Ssl  12:55   0:00 /usr/libexec/gvfsd
+kali        1000  0.0  0.1 532044 10988 ?        Sl   12:55   0:00 /usr/libexec/gvfsd-fuse /run/user/1000/gvfs -f
+kali        1020  0.0  0.5 305632 30112 ?        Sl   12:55   0:04 xfsettingsd --display :0.0 --sm-client-id 229ec5ffc-4062-46ea-9ae3-72d7da91d8dc
+root        1024  0.0  0.2 315616 12576 ?        Ssl  12:55   0:11 /usr/libexec/upowerd
+kali        1029  0.0  0.0  19172  1536 ?        S    12:55   0:00 /usr/bin/VBoxClient --vmsvga
+kali        1030  0.0  0.0 217576  3328 ?        Sl   12:55   0:04 /usr/bin/VBoxClient --vmsvga
+kali        1039  0.0  0.8 476560 51532 ?        Sl   12:55   0:09 xfce4-panel --display :0.0 --sm-client-id 294982412-3cd9-4b10-b488-b15f06e9c71c
+kali        1044  0.0  1.0 549104 59548 ?        Sl   12:55   0:13 Thunar --sm-client-id 2798ab794-707d-448c-b566-0f7245dc3d2a --daemon
+kali        1050  0.0  1.3 601028 79456 ?        Sl   12:55   0:06 xfdesktop --display :0.0 --sm-client-id 2c74cc916-d08f-4a6d-bb9a-0096211f4121
+kali        1054  0.0  0.8 466620 48016 ?        Sl   12:55   0:02 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libwhiskermenu.so 1 27262983 whiskermenu Whisker Menu Show a menu to easily access installed applications
+kali        1058  0.7  0.9 373376 55668 ?        Sl   12:55   3:36 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libcpugraph.so 13 27262988 cpugraph CPU Graph Graphical representation of the CPU load
+kali        1059  0.0  0.4 413896 29512 ?        Sl   12:55   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libsystray.so 14 27262989 systray Status Tray Plugin Provides status notifier items (application indicators) and legacy systray items
+kali        1060  0.2  0.5 350336 30184 ?        Sl   12:55   1:11 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libgenmon.so 15 27262990 genmon Generic Monitor Show output of a command.
+kali        1061  0.0  0.7 535500 45080 ?        Sl   12:55   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libpulseaudio-plugin.so 16 27262991 pulseaudio PulseAudio Plugin Adjust the audio volume of the PulseAudio sound system
+kali        1062  0.0  0.7 538520 44748 ?        Sl   12:55   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libnotification-plugin.so 17 27262992 notification-plugin Notification Plugin Notification plugin for the Xfce panel
+kali        1063  0.0  0.7 465560 46640 ?        Sl   12:55   0:16 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libxfce4powermanager.so 18 27262993 power-manager-plugin Power Manager Plugin Display the battery levels of your devices and control the brightness of your display
+kali        1067  0.0  0.7 399664 45484 ?        Sl   12:55   0:00 /usr/lib/x86_64-linux-gnu/xfce4/panel/wrapper-2.0 /usr/lib/x86_64-linux-gnu/xfce4/panel/plugins/libactions.so 22 27262994 actions Action Buttons Log out, lock or other system actions
+kali        1101  0.0  0.7 465928 44488 ?        Ssl  12:55   0:04 /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd
+kali        1127  0.0  0.4 266472 26132 ?        Sl   12:55   0:02 xfce4-power-manager --restart --sm-client-id 23cb270a1-571a-45c7-bbe9-f16c9f5d8201
+kali        1150  0.0  0.8 559816 49040 ?        Sl   12:55   0:00 nm-applet
+kali        1154  0.0  0.0  14656  4056 ?        Ssl  12:55   0:00 xcape -e Super_L Control_L Escape
+kali        1157  0.0  0.5 505688 32408 ?        Sl   12:55   0:01 light-locker
+kali        1158  0.0  0.2 573472 17692 ?        Ssl  12:55   0:00 /usr/libexec/gvfs-udisks2-volume-monitor
+kali        1163  0.0  0.7 476632 46532 ?        Sl   12:55   0:00 /usr/libexec/polkit-mate-authentication-agent-1
+root        1168  0.0  0.2 471876 17568 ?        Ssl  12:55   0:00 /usr/libexec/udisks2/udisksd
+kali        1169  0.0  0.1 307872  8448 ?        Sl   12:55   0:00 /usr/libexec/geoclue-2.0/demos/agent
+kali        1171  0.0  0.2 596628 12888 ?        Sl   12:55   0:00 xiccd
+kali        1204  0.0  0.8 448532 51860 ?        Sl   12:55   0:00 /usr/bin/python3 /usr/bin/blueman-applet
+colord      1205  0.0  0.2 318496 17384 ?        Ssl  12:55   0:00 /usr/libexec/colord
+kali        1208  0.0  0.0 230268  5760 ?        Ssl  12:55   0:00 /usr/libexec/dconf-service
+kali        1242  0.0  0.1 307332 10332 ?        Ssl  12:55   0:00 /usr/libexec/gvfs-goa-volume-monitor
+kali        1258  0.0  0.1 308316 10856 ?        Ssl  12:55   0:00 /usr/libexec/gvfs-gphoto2-volume-monitor
+kali        1271  0.0  0.1 307356  8380 ?        Ssl  12:55   0:00 /usr/libexec/gvfs-mtp-volume-monitor
+kali        1283  0.0  0.1 387088  9796 ?        Ssl  12:55   0:01 /usr/libexec/gvfs-afc-volume-monitor
+kali        1319  0.0  0.1 533336 10600 ?        Sl   12:55   0:00 /usr/libexec/gvfsd-trash --spawner :1.22 /org/gtk/gvfs/exec_spaw/0
+kali        1328  0.0  0.1 233864  8340 ?        Ssl  12:55   0:00 /usr/libexec/gvfsd-metadata
+kali        1354  0.0  0.1  49160  7936 ?        Ss   12:55   0:00 /usr/libexec/bluetooth/obexd
+kali       58692  0.0  0.2 474724 17728 ?        Ssl  14:52   0:00 /usr/libexec/xdg-desktop-portal
+kali       58697  0.0  0.1 609164 11368 ?        Ssl  14:52   0:00 /usr/libexec/xdg-document-portal
+kali       58701  0.0  0.1 310624 11200 ?        Ssl  14:52   0:00 /usr/libexec/xdg-permission-store
+root       58708  0.0  0.0   2484  1664 ?        Ss   14:52   0:00 fusermount3 -o rw,nosuid,nodev,fsname=portal,auto_unmount,subtype=portal -- /run/user/1000/doc
+kali       58712  0.0  0.3 410140 23448 ?        Ssl  14:52   0:00 /usr/libexec/xdg-desktop-portal-gtk
+kali       59562  0.0  1.6 456076 98292 ?        Sl   14:53   0:04 /usr/bin/qterminal
+kali       59565  0.0  0.1  10224  6348 pts/0    Ss+  14:53   0:00 /usr/bin/zsh
+root       60715  0.0  0.0      0     0 ?        S    14:54   0:00 [psimon]
+root       62804  0.0  0.0   2504  1536 ?        Ss   14:58   0:00 /opt/nessus/sbin/nessus-service -q
+kali       62977 23.7 10.3 11942196 614772 ?     Sl   14:58  88:14 /usr/lib/firefox-esr/firefox-esr
+kali       63048  0.0  0.6 219372 38568 ?        Sl   14:58   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -parentBuildID 20240115170312 -prefsLen 27651 -prefMapSize 235932 -appDir /usr/lib/firefox-esr/browser {a5c87a2a-a3fd-4d67-8854-0a638ccc7101} 62977 true socket
+kali       63065  0.0  2.5 2518960 149416 ?      Sl   14:58   0:10 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 1 -isForBrowser -prefsLen 27792 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {329121aa-416f-409e-b143-8a7e1f3479d4} 62977 true tab
+root       63116  0.0  0.1 390008  7424 ?        Ssl  14:59   0:00 /usr/sbin/pcscd --foreground --auto-exit
+kali       63160  0.0  1.6 2433972 98364 ?       Sl   14:59   0:01 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 3 -isForBrowser -prefsLen 33013 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {11624f4d-f38e-461d-b5b1-c4ad3d6aeba2} 62977 true tab
+kali       63239  2.9  2.4 2542224 142428 ?      Sl   14:59  11:01 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 4 -isForBrowser -prefsLen 28790 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {8414e43e-4da1-4927-992c-5e1cd16086f5} 62977 true tab
+kali       67309  0.0  0.7 371912 44288 ?        Sl   15:06   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -parentBuildID 20240115170312 -prefsLen 33208 -prefMapSize 235932 -appDir /usr/lib/firefox-esr/browser {2814ca69-886b-4928-8cf6-82004d1a8dd7} 62977 true rdd
+kali       67311  0.0  0.8 374224 47788 ?        Sl   15:06   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -parentBuildID 20240115170312 -sandboxingKind 0 -prefsLen 33208 -prefMapSize 235932 -appDir /usr/lib/firefox-esr/browser {05157e66-799a-482a-a3a1-367d89feacbf} 62977 true utility
+root       70045 50.1  8.0 1369408 479152 ?      Dl   15:11 180:13 nessusd -q
+root       79005  0.0  0.2  50868 16704 ?        Ss   17:01   0:01 /usr/lib/systemd/systemd-journald
+root       79020  0.0  0.1  28940  7560 ?        Ss   17:01   0:01 /usr/lib/systemd/systemd-udevd
+root       79041  0.0  0.1  18688  8832 ?        Ss   17:01   0:00 /usr/lib/systemd/systemd-logind
+root       79049  0.0  0.0      0     0 ?        S    17:01   0:00 [psimon]
+root       79072  0.0  0.0      0     0 ?        I<   17:01   0:04 [kworker/0:0H-kblockd]
+kali       83543  2.2  4.0 2589000 238908 ?      Sl   17:10   5:24 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 28 -isForBrowser -prefsLen 28935 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {04f6ef5a-7c32-4d4f-be0f-8bd5925203fd} 62977 true tab
+kali       83547  0.0  2.2 2459180 132092 ?      Sl   17:10   0:03 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 29 -isForBrowser -prefsLen 28935 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {ecc31c8a-ce42-4330-b352-157debdf3477} 62977 true tab
+kali       83628  0.0  1.5 2407572 89876 ?       Sl   17:10   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 30 -isForBrowser -prefsLen 28935 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {3e9f5b38-c067-4260-9166-1958f2d6d616} 62977 true tab
+root       87774  0.0  0.0      0     0 ?        I<   17:19   0:00 [kworker/0:2H]
+root       89139  0.0  0.0      0     0 ?        I    17:22   0:01 [kworker/u5:1-writeback]
+root      111299  0.0  0.0      0     0 ?        I    18:06   0:00 [kworker/u5:3-events_unbound]
+kali      112708  0.0  0.1 459744 10596 ?        Sl   18:09   0:00 /usr/libexec/gvfsd-network --spawner :1.22 /org/gtk/gvfs/exec_spaw/1
+kali      112734  0.0  0.1 388208 10992 ?        Sl   18:09   0:00 /usr/libexec/gvfsd-dnssd --spawner :1.22 /org/gtk/gvfs/exec_spaw/3
+root      148069  0.0  0.0      0     0 ?        I    19:22   0:00 [kworker/u5:2-events_unbound]
+kali      154382  0.0  0.2 386124 12680 ?        Sl   19:34   0:00 /usr/libexec/gvfsd-computer --spawner :1.22 /org/gtk/gvfs/exec_spaw/4
+kali      160505  0.0  1.6 455824 97852 ?        Sl   19:46   0:02 /usr/bin/qterminal
+kali      160508  0.0  0.1  10212  6632 pts/1    Ss+  19:46   0:02 /usr/bin/zsh
+root      163946  0.0  0.0      0     0 ?        I    19:54   0:00 [kworker/u6:3-flush-8:0]
+kali      176431  0.0  1.2 2404408 72168 ?       Sl   20:19   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 40 -isForBrowser -prefsLen 29041 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {7cf09e74-a361-4b19-a0c8-3942cb20d525} 62977 true tab
+kali      176436  0.0  1.2 2404408 74144 ?       Sl   20:19   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 41 -isForBrowser -prefsLen 29041 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {cedc225b-2864-4a9b-88c5-17042dd84570} 62977 true tab
+kali      176512  0.0  1.2 2404408 74116 ?       Sl   20:19   0:00 /usr/lib/firefox-esr/firefox-esr -contentproc -childID 42 -isForBrowser -prefsLen 29041 -prefMapSize 235932 -jsInitLen 240916 -parentBuildID 20240115170312 -appDir /usr/lib/firefox-esr/browser {ca35a864-b9f1-4a99-a64f-ebe6e518563e} 62977 true tab
+root      176998  0.0  0.0      0     0 ?        I    20:20   0:00 [kworker/u4:0]
+root      177853  0.0  0.0      0     0 ?        I    20:22   0:02 [kworker/u6:1-flush-8:0]
+root      183060  0.0  0.0      0     0 ?        I    20:33   0:00 [kworker/u6:0-flush-8:0]
+root      184869  0.0  0.0      0     0 ?        I    20:36   0:00 [kworker/1:0-cgroup_destroy]
+root      189167  0.0  0.0      0     0 ?        I    20:45   0:00 [kworker/0:0-events]
+root      191260  0.7  0.0      0     0 ?        I<   20:49   0:09 [kworker/1:0H-kblockd]
+root      193747  0.0  0.0      0     0 ?        I<   20:54   0:00 [kworker/1:2H]
+root      196851  0.0  0.0      0     0 ?        I    21:01   0:00 [kworker/1:1-ata_sff]
+kali      197221  0.0  0.1 307224  8172 ?        Sl   21:01   0:00 /usr/lib/x86_64-linux-gnu/xfce4/xfconf/xfconfd
+root      198472  0.0  0.0      0     0 ?        I    21:04   0:00 [kworker/0:2-cgroup_destroy]
+root      199495  0.0  0.0      0     0 ?        I    21:06   0:00 [kworker/1:2-events]
+root      199548  0.0  0.0      0     0 ?        I    21:06   0:00 [kworker/1:3-events]
+root      200511  0.6  0.0      0     0 ?        I<   21:08   0:01 [kworker/0:1H-kblockd]
+root      202409  1.5  0.1  17708  7424 ?        Ss   21:11   0:00 /usr/lib/systemd/systemd-timedated
+root      202531  0.0  0.0   2580  1536 ?        S    21:11   0:00 sh -c /bin/ps auxww 2>/dev/null
+root      202532  0.0  0.0  10860  4352 ?        R    21:11   0:00 /bin/ps auxww
+","","","","","","None","","","","2018/06/12","2023/11/27","","",""
+"117887","","","None","10.0.2.15","tcp","0","OS Security Patch Assessment Available","Nessus was able to log in to the remote host using the provided
+credentials and enumerate OS security patch levels.","Nessus was able to determine OS security patch levels by logging
+into the remote host and running commands to determine the version
+of the operating system and its components.  The remote host was
+identified as an operating system or device that Nessus supports for
+patch and update assessment.  The necessary information was obtained
+to perform these checks.","n/a","","OS Security Patch Assessment is available.
+
+Protocol : LOCAL
+","","","","","","None","","IAVB:0001-B-0516","","2018/10/02","2021/07/12","","",""
+"130024","","","None","10.0.2.15","tcp","0","PostgreSQL Client/Server Installed (Linux)","One or more PostgreSQL server or client versions are available on the remote Linux host.","One or more PostgreSQL server or client versions have been detected on the remote Linux host.","n/a","","
+  Path    : /usr/lib/postgresql/16/bin/postgres/usr/lib/postgresql/16/lib/bitcode/postgres
+ (via package manager)
+  Version : 16.1
+","","","","","","None","","","","2019/10/18","2024/04/23","","",""
+"130024","","","None","10.0.2.15","tcp","0","PostgreSQL Client/Server Installed (Linux)","One or more PostgreSQL server or client versions are available on the remote Linux host.","One or more PostgreSQL server or client versions have been detected on the remote Linux host.","n/a","","
+  Path    : /usr/lib/postgresql/16/bin/psql (via package manager)
+  Version : 16.1
+","","","","","","None","","","","2019/10/18","2024/04/23","","",""
+"136318","","","None","10.0.2.15","tcp","8834","TLS Version 1.2 Protocol Detection","The remote service encrypts traffic using a version of TLS.","The remote service accepts connections encrypted using TLS 1.2.","N/A","https://tools.ietf.org/html/rfc5246","TLSv1.2 is enabled and the server supports at least one cipher.","","","","","","None","","","","2020/05/04","2020/05/04","","",""
+"136340","","","None","10.0.2.15","tcp","0","nginx Installed (Linux/UNIX)","NGINX is installed on the remote Linux / Unix host.","NGINX, a web server with load balancing capabilities, is installed on
+ the remote Linux / Unix host.","n/a","https://www.nginx.com","
+  Path             : /usr/sbin/nginx
+  Version          : 1.24.0
+  Detection Method : Binary in $PATH
+  Full Version     : 1.24.0
+  Nginx Plus       : False
+","","","","","","None","","","","2020/05/05","2024/04/23","","",""
+"138330","","","None","10.0.2.15","tcp","8834","TLS Version 1.3 Protocol Detection","The remote service encrypts traffic using a version of TLS.","The remote service accepts connections encrypted using TLS 1.3.","N/A","https://tools.ietf.org/html/rfc8446","TLSv1.3 is enabled and the server supports at least one cipher.","","","","","","None","","","","2020/07/09","2023/12/13","","",""
+"141118","","","None","10.0.2.15","tcp","0","Target Credential Status by Authentication Protocol - Valid Credentials Provided","Valid credentials were provided for an available authentication protocol.","Nessus was able to determine that valid credentials were provided for
+an authentication protocol available on the remote target because it
+was able to successfully authenticate directly to the remote target
+using that authentication protocol at least once. Authentication was
+successful because the authentication protocol service was available
+remotely, the service was able to be identified, the authentication
+protocol was able to be negotiated successfully, and a set of
+credentials provided in the scan policy for that authentication
+protocol was accepted by the remote service. See plugin output for
+details, including protocol, port, and account.
+
+Please note the following :
+
+- This plugin reports per protocol, so it is possible for
+  valid credentials to be provided for one protocol and not
+  another. For example, authentication may succeed via SSH
+  but fail via SMB, while no credentials were provided for
+  an available SNMP service.
+
+- Providing valid credentials for all available
+  authentication protocols may improve scan coverage, but
+  the value of successful authentication for a given
+  protocol may vary from target to target depending upon
+  what data (if any) is gathered from the target via that
+  protocol. For example, successful authentication via SSH
+  is more valuable for Linux targets than for Windows
+  targets, and likewise successful authentication via SMB
+  is more valuable for Windows targets than for Linux
+  targets.","n/a","","Nessus was able to execute commands on localhost.
+
+","","","","","","None","","","","2020/10/15","2024/03/25","","",""
+"141394","","","None","10.0.2.15","tcp","0","Apache HTTP Server Installed (Linux)","The remote host has Apache HTTP Server software installed.","Apache HTTP Server is installed on the remote Linux host.","n/a","https://httpd.apache.org/","
+  Path               : /usr/sbin/apache2
+  Version            : 2.4.58
+  Associated Package : apache2-bin: /usr/sbin/apache2
+  Managed by OS      : True
+  Running            : no
+
+  Configs found :
+    - /etc/apache2/apache2.conf
+
+  Loaded modules :
+    - libphp8.2
+    - mod_access_compat
+    - mod_alias
+    - mod_auth_basic
+    - mod_authn_core
+    - mod_authn_file
+    - mod_authz_core
+    - mod_authz_host
+    - mod_authz_user
+    - mod_autoindex
+    - mod_deflate
+    - mod_dir
+    - mod_env
+    - mod_filter
+    - mod_mime
+    - mod_mpm_prefork
+    - mod_negotiation
+    - mod_reqtimeout
+    - mod_setenvif
+    - mod_status
+","","","","","","None","","IAVT:0001-T-0530","","2020/10/12","2024/05/02","","",""
+"142640","","","None","10.0.2.15","tcp","0","Apache HTTP Server Site Enumeration","The remote host is hosting websites using Apache HTTP Server.","Domain names and IP addresses from Apache HTTP Server configuration file were retrieved from the remote 
+host. Apache HTTP Server is a webserver environment written in C. Note: Only Linux- and Unix-based hosts are currently supported by this plugin.","n/a","https://httpd.apache.org/","Sites and configs present in /usr/sbin/apache2 Apache installation:
+  - following sites are present in /etc/apache2/apache2.conf Apache config file:
+    +  - *:80","","","","","","None","","","","2020/11/09","2024/04/23","","",""
+"147817","","","None","10.0.2.15","tcp","0","Java Detection and Identification (Linux / Unix)","Java is installed on the remote Linux / Unix host.","One or more instances of Java are installed on the remote Linux / Unix 
+host. This may include private JREs bundled with the Java Development
+ Kit (JDK).
+Notes:
+
+  - This plugin attempts to detect Oracle and non-Oracle JRE instances 
+    such as Zulu Java, Amazon Corretto, AdoptOpenJDK, IBM Java, etc
+  - To discover instances of JRE that are not in PATH, 
+    or installed via a package manager, 'Perform thorough tests' 
+    setting must be enabled.","n/a","https://en.wikipedia.org/wiki/Java_(software_platform)","
+  Path             : /usr/lib/jvm/java-17-openjdk-amd64/
+  Version          : 1.17.0_10
+  Application      : OpenJDK Java
+  Binary Location  : /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+  Details          : This Java install appears to be OpenJDK due to the install directory
+                     name (high confidence).
+  Detection Method : ""find"" utility
+  Managed by OS    : True
+","","","","","","None","","IAVT:0001-T-0690","","2021/03/16","2024/04/23","","",""
+"148373","","","None","10.0.2.15","tcp","0","OpenJDK Java Detection (Linux / Unix)","A distribution of Java is installed on the remote Linux / Unix host.","One or more instances of OpenJDK Java are installed on the remote 
+host.  This may include private JREs bundled with the Java
+Development Kit (JDK).
+
+Notes:
+
+  - Addition information provided in plugin
+    Java Detection and Identification (Unix)
+
+  - Additional instances of Java may be discovered by enabling thorough
+    tests","n/a","https://openjdk.java.net/","
+  Path            : /usr/lib/jvm/java-17-openjdk-amd64/
+  Version         : 1.17.0_10
+  Binary Location : /usr/lib/jvm/java-17-openjdk-amd64/bin/java
+  Managed by OS   : True
+","","","","","","None","","","","2021/04/07","2024/04/23","","",""
+"151883","","","None","10.0.2.15","tcp","0","Libgcrypt Installed (Linux/UNIX)","Libgcrypt is installed on this host.","Libgcrypt, a cryptography library, was found on the
+remote host.","n/a","https://gnupg.org/download/index.html","
+Nessus detected 4 installs of Libgcrypt:
+
+  Path    : /usr/lib/x86_64-linux-gnu/libgcrypt.so.20.4.3
+  Version : 1.10.3
+
+  Path    : /usr/lib/x86_64-linux-gnu/libgcrypt.so.20
+  Version : 1.10.3
+
+  Path    : /lib/x86_64-linux-gnu/libgcrypt.so.20.4.3
+  Version : 1.10.3
+
+  Path    : /lib/x86_64-linux-gnu/libgcrypt.so.20
+  Version : 1.10.3
+","","","","","","None","","","","2021/07/21","2024/04/23","","",""
+"152742","","","None","10.0.2.15","tcp","0","Unix Software Discovery Commands Available","Nessus was able to log in to the remote host using the provided
+credentials and is able to execute all commands used to find
+unmanaged software.","Nessus was able to determine that it is possible for plugins to find
+and identify versions of software on the target host. Software that
+is not managed by the operating system is typically found and
+characterized using these commands.  This was measured by running
+commands used by unmanaged software plugins and validating their
+output against expected results.","n/a","","Unix software discovery checks are available.
+
+Protocol : LOCAL
+","","","","","","None","","","","2021/08/23","2021/08/23","","",""
+"157358","","","None","10.0.2.15","tcp","0","Linux Mounted Devices","Use system commands to obtain the list of mounted devices on the target machine at scan time.","Report the mounted devices information on the target machine at scan time using the following commands.
+/bin/df -h
+/bin/lsblk
+/bin/mount -l
+
+This plugin only reports on the tools available on the system and omits any tool
+that did not return information when the command was ran.","n/a","","$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev            2.8G     0  2.8G   0% /dev
+tmpfs           580M  1.0M  579M   1% /run
+/dev/sda1        79G   22G   53G  30% /
+tmpfs           2.9G     0  2.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+COMPARTIDO      951G  723G  229G  76% /media/sf_COMPARTIDO
+tmpfs           580M  132K  580M   1% /run/user/1000
+
+
+$ lsblk
+NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINTS
+sda      8:0    0 80.1G  0 disk 
+└─sda1   8:1    0 80.1G  0 part /
+sr0     11:0    1 1024M  0 rom  
+
+
+$ mount -l
+sysfs on /sys type sysfs (rw,nosuid,nodev,noexec,relatime)
+proc on /proc type proc (rw,nosuid,nodev,noexec,relatime)
+udev on /dev type devtmpfs (rw,nosuid,relatime,size=2924204k,nr_inodes=731051,mode=755,inode64)
+devpts on /dev/pts type devpts (rw,nosuid,noexec,relatime,gid=5,mode=620,ptmxmode=000)
+tmpfs on /run type tmpfs (rw,nosuid,nodev,noexec,relatime,size=593200k,mode=755,inode64)
+/dev/sda1 on / type ext4 (rw,relatime,errors=remount-ro) [root]
+securityfs on /sys/kernel/security type securityfs (rw,nosuid,nodev,noexec,relatime)
+tmpfs on /dev/shm type tmpfs (rw,nosuid,nodev,inode64)
+tmpfs on /run/lock type tmpfs (rw,nosuid,nodev,noexec,relatime,size=5120k,inode64)
+cgroup2 on /sys/fs/cgroup type cgroup2 (rw,nosuid,nodev,noexec,relatime,nsdelegate,memory_recursiveprot)
+pstore on /sys/fs/pstore type pstore (rw,nosuid,nodev,noexec,relatime)
+bpf on /sys/fs/bpf type bpf (rw,nosuid,nodev,noexec,relatime,mode=700)
+systemd-1 on /proc/sys/fs/binfmt_misc type autofs (rw,relatime,fd=32,pgrp=1,timeout=0,minproto=5,maxproto=5,direct,pipe_ino=4619)
+mqueue on /dev/mqueue type mqueue (rw,nosuid,nodev,noexec,relatime)
+hugetlbfs on /dev/hugepages type hugetlbfs (rw,nosuid,nodev,relatime,pagesize=2M)
+debugfs on /sys/kernel/debug type debugfs (rw,nosuid,nodev,noexec,relatime)
+tracefs on /sys/kernel/tracing type tracefs (rw,nosuid,nodev,noexec,relatime)
+fusectl on /sys/fs/fuse/connections type fusectl (rw,nosuid,nodev,noexec,relatime)
+configfs on /sys/kernel/config type configfs (rw,nosuid,nodev,noexec,relatime)
+binfmt_misc on /proc/sys/fs/binfmt_misc type binfmt_misc (rw,nosuid,nodev,noexec,relatime)
+sunrpc on /run/rpc_pipefs type rpc_pipefs (rw,relatime)
+COMPARTIDO on /media/sf_COMPARTIDO type vboxsf (rw,nodev,relatime)
+tmpfs on /run/user/1000 type tmpfs (rw,nosuid,nodev,relatime,size=593196k,nr_inodes=148299,mode=700,uid=1000,gid=1000,inode64)
+gvfsd-fuse on /run/user/1000/gvfs type fuse.gvfsd-fuse (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+portal on /run/user/1000/doc type fuse.portal (rw,nosuid,nodev,relatime,user_id=1000,group_id=1000)
+
+
+","","","","","","None","","","","2022/02/03","2023/11/27","","",""
+"159273","","","None","10.0.2.15","tcp","0","Dockerfile Detection for Linux/UNIX","Detected Dockerfiles on the host.","The host contains Dockerfiles, text files containing instructions to build Docker images.","n/a","https://docs.docker.com/engine/reference/builder/","Dockerfiles found: 3
+ - /usr/share/metasploit-framework/tools/payloads/ysoserial/Dockerfile
+ - /usr/share/metasploit-framework/vendor/bundle/ruby/3.1.0/gems/net-ssh-7.2.1/Dockerfile
+ - /usr/share/metasploit-framework/vendor/bundle/ruby/3.1.0/gems/puma-6.4.2/tools/Dockerfile
+","","","","","","None","","","","2022/03/29","2024/04/23","","",""
+"163326","","","None","10.0.2.15","tcp","0","Tenable Nessus Installed (Linux)","Tenable Nessus is installed on the remote Linux host.","Tenable Nessus is installed on the remote Linux host.","n/a","https://www.tenable.com/products/nessus","
+  Path    : /opt/nessus
+  Version : 10.7.2
+  Build   : 20029
+","","","","","","None","","","","2022/07/21","2024/04/23","","",""
+"168007","","","None","10.0.2.15","tcp","0","OpenSSL Installed (Linux)","OpenSSL was detected on the remote Linux host.","OpenSSL was detected on the remote Linux host.
+
+The plugin timeout can be set to a custom value other than the plugin's default
+of 15 minutes via the 'timeout.168007' scanner setting in Nessus 8.15.1 or later.
+
+Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.","n/a","https://openssl.org/","
+Nessus detected 4 installs of OpenSSL:
+
+  Path               : /opt/nessus/bin/openssl
+  Version            : 3.0.13
+  Associated Package : nessus
+
+  Path               : /usr/lib/x86_64-linux-gnu/ruby/3.1.0/openssl.so
+  Version            : 3.1.4
+  Associated Package : libruby3.1
+
+  Path               : /usr/lib/x86_64-linux-gnu/libcrypto.so.3
+  Version            : 3.1.4
+  Associated Package : libssl3
+
+  Path               : /usr/bin/openssl
+  Version            : 3.1.4
+  Associated Package : openssl 3.1.4-2
+  Managed by OS      : True
+
+We are unable to retrieve version info from the following list of OpenSSL files. However, these installs may include their version within the filename or the filename of the Associated Package.
+
+e.g. libssl.so.3 (OpenSSL 3.x), libssl.so.1.1 (OpenSSL 1.1.x)
+
+/usr/lib/x86_64-linux-gnu/libssl.so.3
+
+","","","","","","None","","","","2022/11/21","2024/04/23","","",""
+"168980","","","None","10.0.2.15","tcp","0","Enumerate the PATH Variables","Enumerates the PATH variable of the current scan user.","Enumerates the PATH variables of the current scan user.","Ensure that directories listed here are in line with corporate policy.","","Nessus has enumerated the path of the current scan user : 
+
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+
+","","","","","","None","","","","2022/12/21","2024/04/29","","",""
+"168982","","","None","10.0.2.15","tcp","22","Filepaths contain Dangerous characters (Linux)","This Tenable product detected files or paths on the scanned Unix-like system which contain characters with command
+injection or privilege escalation potential.","This Tenable product detected files or paths on the scanned Unix-like system which contain characters with command
+injection or privilege escalation potential. Although almost any character is valid for an entry in this kind of
+filesystem, such as semicolons, use of some of them may lead to problems or security compromise when used in further
+commands.
+
+This product has chosen in certain plugins to avoid digging within those files and directories for security reasons.
+These should be renamed to avoid security compromise.","Rename these files or folders to not include dangerous characters.","","The following files and directories contain potentially dangerous characters such as brackets, ampersand, or semicolon.
+This scanner avoided access to these files when possible for safety:
+
+/usr/share/node_modules/@types/node
+/usr/share/nodejs/@types/node","","","","","","None","","","","2022/12/21","2022/12/21","","",""
+"170170","","","None","10.0.2.15","tcp","0","Enumerate the Network Interface configuration via SSH","Nessus was able to parse the Network Interface data on the remote host.","Nessus was able to parse the Network Interface data on the remote host.","n/a","","lo:
+  IPv4:
+    - Address : 127.0.0.1
+        Netmask : 255.0.0.0
+  IPv6:
+    - Address : ::1
+        Prefixlen : 128
+        Scope : host
+        ScopeID : 0x10
+eth0:
+  MAC : 08:00:27:1e:36:4a
+  IPv4:
+    - Address : 10.0.2.15
+        Netmask : 255.255.255.0
+        Broadcast : 10.0.2.255
+  IPv6:
+    - Address : fe80::6ed7:9275:c8f:c8a8
+        Prefixlen : 64
+        Scope : link
+        ScopeID : 0x20
+","","","","","","None","","","","2023/01/19","2023/11/17","","",""
+"171410","","","None","10.0.2.15","tcp","0","IP Assignment Method Detection","Enumerates the IP address assignment method(static/dynamic).","Enumerates the IP address assignment method(static/dynamic).","n/a","","+ lo
+  + IPv4
+    - Address       : 127.0.0.1
+      Assign Method : static
+  + IPv6
+    - Address       : ::1
+      Assign Method : static
++ eth0
+  + IPv4
+    - Address       : 10.0.2.15
+      Assign Method : dynamic
+  + IPv6
+    - Address       : fe80::6ed7:9275:c8f:c8a8
+      Assign Method : static
+","","","","","","None","","","","2023/02/14","2024/04/29","","",""
+"174788","","","None","10.0.2.15","tcp","0","SQLite Local Detection (Linux)","The remote Linux host has SQLite Database software installed.","Version information for SQLite was retrieved from the remote
+host.  SQLite is an embedded database written in C.
+
+  - To discover instances of SQLite that are not in PATH, 
+    or installed via a package manager, 'Perform thorough tests' 
+    setting must be enabled.","n/a","https://www.sqlite.org/","
+Nessus detected 2 installs of SQLite:
+
+  Path    : /usr/bin/sqlite3
+  Version : unknown
+
+  Path    : /bin/sqlite3
+  Version : unknown
+","","","","","","None","","","","2023/04/26","2024/04/23","","",""
+"178771","","","None","10.0.2.15","tcp","0","Node.js Installed (Linux / UNIX)","Node.js is installed on the remote Linux / UNIX host.","Node.js is installed on the remote Linux / UNIX host.","n/a","https://nodejs.org","
+  Path            : /usr/bin/node
+  Version         : 18.19.1
+  Managed         : 1
+  Package         : nodejs
+  Package release : 3
+  Package version : 18.19.1+dfsg
+
+  aliases :
+    - /bin/node
+    - /bin/nodejs
+    - /usr/bin/nodejs
+","","","","","","None","","","","2023/07/25","2024/04/23","","",""
+"178772","","","None","10.0.2.15","tcp","0","Node.js Modules Installed (Linux)","Nessus was able to enumerate one or more Node.js modules installed on the remote host.","Nessus was able to enumerate one or more Node.js modules installed on the remote host.","n/a","https://nodejs.org/api/modules.html","
+    Installed top-level Node.js modules : 
+
+name: acorn-import-assertions
+version: 1.8.0
+path: /usr/share/node_modules/acorn-import-assertions/package.json
+
+name: acorn-jsx
+version: 5.3.1
+path: /usr/share/node_modules/acorn-jsx/package.json
+
+name: acorn-private-methods
+version: 1.0.0
+path: /usr/share/node_modules/acorn-private-methods/package.json
+
+name: undici
+version: 5.28.2
+path: /usr/share/node_modules/undici/package.json
+
+name: undici/types
+version: 5.28.2
+path: /usr/share/node_modules/undici/types/package.json
+
+name: acorn-loose
+version: 8.3.0
+path: /usr/share/node_modules/acorn-loose/package.json
+
+name: acorn-numeric-separator
+version: 0.3.4
+path: /usr/share/node_modules/acorn-numeric-separator/package.json
+
+name: normalize.css
+version: 8.0.1
+path: /usr/share/node_modules/normalize.css/package.json
+
+name: acorn-class-fields
+version: 1.0.0
+path: /usr/share/node_modules/acorn-class-fields/package.json
+
+name: @fastify/busboy
+version: 2.1.0
+path: /usr/share/node_modules/@fastify/busboy/package.json
+
+name: acorn-private-class-elements
+version: 1.0.0
+path: /usr/share/node_modules/acorn-private-class-elements/package.json
+
+name: xtend
+version: 4.0.2
+path: /usr/share/node_modules/xtend/package.json
+
+name: acorn
+version: 8.8.1
+path: /usr/share/node_modules/acorn/package.json
+
+name: acorn-import-meta
+version: 1.1.0
+path: /usr/share/node_modules/acorn-import-meta/package.json
+
+name: font-awesome
+version: 4.7.0
+path: /usr/share/node_modules/font-awesome/package.json
+
+name: acorn-globals
+version: 6.0.0
+path: /usr/share/node_modules/acorn-globals/package.json
+
+name: acorn-node
+version: 2.0.1
+path: /usr/share/node_modules/acorn-node/package.json
+
+name: acorn-bigint
+version: 1.0.0
+path: /usr/share/node_modules/acorn-bigint/package.json
+
+name: @types/node
+version: 18.18.14
+path: /usr/share/node_modules/@types/node/package.json
+
+name: binary-search
+version: 1.3.6
+path: /usr/share/node_modules/binary-search/package.json
+
+name: acorn-static-class-features
+version: 1.0.0
+path: /usr/share/node_modules/acorn-static-class-features/package.json
+
+name: acorn-export-ns-from
+version: 0.2.0
+path: /usr/share/node_modules/acorn-export-ns-from/package.json
+
+name: acorn-dynamic-import
+version: 4.0.0
+path: /usr/share/node_modules/acorn-dynamic-import/package.json
+
+name: undici-types
+version: 5.28.2
+path: /usr/share/node_modules/undici-types/package.json
+
+name: acorn-walk
+version: 8.2.0
+path: /usr/share/node_modules/acorn-walk/package.json
+
+name: cjs-module-lexer
+version: 1.2.3
+path: /usr/share/node_modules/cjs-module-lexer/package.json
+
+","","","","","","None","","","","2023/07/25","2024/05/02","","",""
+"179200","","","None","10.0.2.15","tcp","0","Enumerate the Network Routing configuration via SSH","Nessus was able to retrieve network routing information from the remote host.","Nessus was able to retrieve network routing information the remote host.","n/a","","Gateway Routes:
+  eth0:
+    ipv4_gateways:
+      10.0.2.2:
+        subnets:
+         - 0.0.0.0/0
+Interface Routes:
+  eth0:
+    ipv4_subnets:
+     - 10.0.2.0/24
+    ipv6_subnets:
+     - fe80::/64
+","","","","","","None","","","","2023/08/02","2023/08/02","","",""
+"182774","","","None","10.0.2.15","tcp","0","Curl Installed (Linux / Unix)","Curl is installed on the remote Linux / Unix host.","Curl (also known as curl and cURL) is installed on the remote Linux / Unix host.
+
+Additional information:
+
+  - More paths will be searched and the timeout for the search will be increased
+    if 'Perform thorough tests' setting is enabled.
+
+  - The plugin timeout can be set to a custom value other than the
+    plugin's default of 30 minutes via the 'timeout.182774' scanner
+    setting in Nessus 8.15.1 or later.
+
+    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.","n/a","https://curl.se/","
+  Path               : /usr/bin/curl
+  Version            : 8.5.0
+  Associated Package : curl 8.5.0-2
+  Managed by OS      : True
+","","","","","","None","","","","2023/10/09","2024/04/23","","",""
+"182848","","","None","10.0.2.15","tcp","0","libcurl Installed (Linux / Unix)","libcurl is installed on the remote Linux / Unix host.","libcurl is installed on the remote Linux / Unix host.
+
+Additional information:
+
+  - More paths will be searched and the timeout for the search will be increased
+    if 'Perform thorough tests' setting is enabled.
+
+  - The plugin timeout can be set to a custom value other than the
+    plugin's default of 30 minutes via the 'timeout.182774' scanner
+    setting in Nessus 8.15.1 or later.
+
+    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.","n/a","https://curl.se/","
+Nessus detected 2 installs of libcurl:
+
+  Path               : /usr/lib/x86_64-linux-gnu/libcurl.so.4.8.0
+  Version            : 8.5.0
+  Associated Package : libcurl4 8.5.0-2
+  Managed by OS      : True
+
+  Path               : /usr/lib/x86_64-linux-gnu/libcurl-gnutls.so.4.8.0
+  Version            : 8.5.0
+  Associated Package : libcurl3-gnutls 8.5.0-2
+  Managed by OS      : True
+","","","","","","None","","","","2023/10/10","2024/04/23","","",""
+"189731","","","None","10.0.2.15","tcp","0","Vim Installed (Linux)","Vim is installed on the remote Linux host.","Vim is installed on the remote Linux host.","n/a","https://www.vim.org/","
+Nessus detected 2 installs of Vim:
+
+  Path    : /usr/bin/vim.tiny
+  Version : 9.1
+
+  Path    : /usr/bin/vim.basic
+  Version : 9.1
+","","","","","","None","","","","2024/01/29","2024/04/23","","",""
+"189990","","","None","10.0.2.15","tcp","0","Jmcnamara Spreadsheet-ParseExcel Installed (Unix)","Jmcnamara Spreadsheet-ParseExcel is installed on the remote Unix host.","Jmcnamara Spreadsheet-ParseExcel is installed on the remote Unix host.","n/a","https://github.com/jmcnamara/spreadsheet-parseexcel","
+  Path    : /usr/share/perl5/Spreadsheet/ParseExcel.pm
+  Version : 0.66
+","","","","","","None","","","","2024/02/05","2024/04/23","","",""
+"192709","","","None","10.0.2.15","tcp","0","Tukaani XZ Utils Installed (Linux / Unix)","Tukaani XZ Utils is installed on the remote Linux / Unix host.","Tukaani XZ Utils is installed on the remote Linux / Unix host.
+
+XZ Utils consists of several components, including:
+  - liblzma
+  - xz
+
+Additional information:
+
+  - More paths will be searched and the timeout for the search will be increased
+    if 'Perform thorough tests' setting is enabled.
+
+  - The plugin timeout can be set to a custom value other than the
+    plugin's default of 30 minutes via the 'timeout.182774' scanner
+    setting in Nessus 8.15.1 or later.
+
+    Please see https://docs.tenable.com/nessus/Content/SettingsAdvanced.htm#Custom for more information.","n/a","https://xz.tukaani.org/xz-utils/","
+Nessus detected 2 installs of XZ Utils:
+
+  Path               : /usr/bin/xz
+  Version            : 5.4.5
+  Associated Package : xz-utils 5.4.5-0.3
+  Managed by OS      : True
+
+  Path               : /usr/lib/x86_64-linux-gnu/liblzma.so.5.4.5
+  Version            : 5.4.5
+  Associated Package : liblzma5 5.4.5-0.3
+  Managed by OS      : True
+","","","","","","None","","","","2024/03/29","2024/04/23","","",""
+"193143","","","None","10.0.2.15","tcp","0","Linux Time Zone Information","Nessus was able to collect and report time zone information from the remote host.","Nessus was able to collect time zone information from the remote
+  Linux host.","None","","Via date: EDT -0400
+Via timedatectl: Time zone: America/New_York (EDT, -0400)
+Via /etc/timezone: America/New_York
+Via /etc/localtime: EST5EDT,M3.2.0,M11.1.0
+","","","","","","None","","","","2024/04/10","2024/04/10","","",""
+"193405","CVE-2024-21011","2.6","Low","10.0.2.15","tcp","0","OpenJDK 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 / 21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0 Multiple Vulnerabilities (2024-04-16","OpenJDK is affected by multiple vulnerabilities.","The version of OpenJDK installed on the remote host is prior to 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 /
+21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0. It is, therefore, affected by multiple vulnerabilities as referenced in the
+2024-04-16 advisory.
+
+Please Note: Java CVEs do not always include OpenJDK versions, but are confirmed separately by Tenable using the patch
+versions from the referenced OpenJDK security advisory.
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized update,
+    insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified
+    Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to
+    Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java
+    applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java
+    sandbox for security. (CVE-2024-21094)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE
+    (component: Concurrency). Supported versions that are affected are Oracle Java SE: 8u401, 8u401-perf,
+    11.0.22; Oracle GraalVM Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows
+    unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition.
+    Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web
+    service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in
+    clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run
+    untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security.
+    (CVE-2024-21085)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM
+    Enterprise Edition. Note: This vulnerability can be exploited by using APIs in the specified Component,
+    e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java
+    deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets,
+    that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox
+    for security. (CVE-2024-21011)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401-perf,
+    11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2 and 22; Oracle GraalVM Enterprise
+    Edition: 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a
+    web service which supplies data to the APIs. This vulnerability also applies to Java deployments,
+    typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load
+    and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for
+    security. (CVE-2024-21068)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Networking). Supported versions that are affected are Oracle Java SE: 11.0.22,
+    17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM Enterprise Edition:
+    20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java
+    Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes
+    from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java
+    deployments, typically in servers, that load and run only trusted code (e.g., code installed by an
+    administrator). (CVE-2024-21012)
+
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to an OpenJDK version greater than 8u402 / 11.0.22 / 17.0.10 / 21.0.2 / 22.0.0","https://openjdk.java.net/groups/vulnerability/advisories/2024-04-16","
+  Path              : /usr/lib/jvm/java-17-openjdk-amd64/
+  Installed version : 17.0.10
+  Fixed version     : Upgrade to a version greater than 17.0.10
+","","3.7","1.9","3.2","2.9","Low","","","","2024/04/17","2024/04/17","","",""
+"193405","CVE-2024-21012","2.6","Low","10.0.2.15","tcp","0","OpenJDK 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 / 21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0 Multiple Vulnerabilities (2024-04-16","OpenJDK is affected by multiple vulnerabilities.","The version of OpenJDK installed on the remote host is prior to 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 /
+21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0. It is, therefore, affected by multiple vulnerabilities as referenced in the
+2024-04-16 advisory.
+
+Please Note: Java CVEs do not always include OpenJDK versions, but are confirmed separately by Tenable using the patch
+versions from the referenced OpenJDK security advisory.
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized update,
+    insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified
+    Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to
+    Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java
+    applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java
+    sandbox for security. (CVE-2024-21094)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE
+    (component: Concurrency). Supported versions that are affected are Oracle Java SE: 8u401, 8u401-perf,
+    11.0.22; Oracle GraalVM Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows
+    unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition.
+    Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web
+    service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in
+    clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run
+    untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security.
+    (CVE-2024-21085)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM
+    Enterprise Edition. Note: This vulnerability can be exploited by using APIs in the specified Component,
+    e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java
+    deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets,
+    that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox
+    for security. (CVE-2024-21011)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401-perf,
+    11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2 and 22; Oracle GraalVM Enterprise
+    Edition: 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a
+    web service which supplies data to the APIs. This vulnerability also applies to Java deployments,
+    typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load
+    and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for
+    security. (CVE-2024-21068)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Networking). Supported versions that are affected are Oracle Java SE: 11.0.22,
+    17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM Enterprise Edition:
+    20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java
+    Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes
+    from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java
+    deployments, typically in servers, that load and run only trusted code (e.g., code installed by an
+    administrator). (CVE-2024-21012)
+
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to an OpenJDK version greater than 8u402 / 11.0.22 / 17.0.10 / 21.0.2 / 22.0.0","https://openjdk.java.net/groups/vulnerability/advisories/2024-04-16","
+  Path              : /usr/lib/jvm/java-17-openjdk-amd64/
+  Installed version : 17.0.10
+  Fixed version     : Upgrade to a version greater than 17.0.10
+","","3.7","1.9","3.2","2.9","Low","","","","2024/04/17","2024/04/17","","",""
+"193405","CVE-2024-21068","2.6","Low","10.0.2.15","tcp","0","OpenJDK 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 / 21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0 Multiple Vulnerabilities (2024-04-16","OpenJDK is affected by multiple vulnerabilities.","The version of OpenJDK installed on the remote host is prior to 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 /
+21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0. It is, therefore, affected by multiple vulnerabilities as referenced in the
+2024-04-16 advisory.
+
+Please Note: Java CVEs do not always include OpenJDK versions, but are confirmed separately by Tenable using the patch
+versions from the referenced OpenJDK security advisory.
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized update,
+    insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified
+    Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to
+    Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java
+    applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java
+    sandbox for security. (CVE-2024-21094)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE
+    (component: Concurrency). Supported versions that are affected are Oracle Java SE: 8u401, 8u401-perf,
+    11.0.22; Oracle GraalVM Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows
+    unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition.
+    Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web
+    service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in
+    clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run
+    untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security.
+    (CVE-2024-21085)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM
+    Enterprise Edition. Note: This vulnerability can be exploited by using APIs in the specified Component,
+    e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java
+    deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets,
+    that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox
+    for security. (CVE-2024-21011)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401-perf,
+    11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2 and 22; Oracle GraalVM Enterprise
+    Edition: 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a
+    web service which supplies data to the APIs. This vulnerability also applies to Java deployments,
+    typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load
+    and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for
+    security. (CVE-2024-21068)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Networking). Supported versions that are affected are Oracle Java SE: 11.0.22,
+    17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM Enterprise Edition:
+    20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java
+    Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes
+    from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java
+    deployments, typically in servers, that load and run only trusted code (e.g., code installed by an
+    administrator). (CVE-2024-21012)
+
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to an OpenJDK version greater than 8u402 / 11.0.22 / 17.0.10 / 21.0.2 / 22.0.0","https://openjdk.java.net/groups/vulnerability/advisories/2024-04-16","
+  Path              : /usr/lib/jvm/java-17-openjdk-amd64/
+  Installed version : 17.0.10
+  Fixed version     : Upgrade to a version greater than 17.0.10
+","","3.7","1.9","3.2","2.9","Low","","","","2024/04/17","2024/04/17","","",""
+"193405","CVE-2024-21085","2.6","Low","10.0.2.15","tcp","0","OpenJDK 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 / 21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0 Multiple Vulnerabilities (2024-04-16","OpenJDK is affected by multiple vulnerabilities.","The version of OpenJDK installed on the remote host is prior to 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 /
+21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0. It is, therefore, affected by multiple vulnerabilities as referenced in the
+2024-04-16 advisory.
+
+Please Note: Java CVEs do not always include OpenJDK versions, but are confirmed separately by Tenable using the patch
+versions from the referenced OpenJDK security advisory.
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized update,
+    insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified
+    Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to
+    Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java
+    applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java
+    sandbox for security. (CVE-2024-21094)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE
+    (component: Concurrency). Supported versions that are affected are Oracle Java SE: 8u401, 8u401-perf,
+    11.0.22; Oracle GraalVM Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows
+    unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition.
+    Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web
+    service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in
+    clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run
+    untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security.
+    (CVE-2024-21085)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM
+    Enterprise Edition. Note: This vulnerability can be exploited by using APIs in the specified Component,
+    e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java
+    deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets,
+    that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox
+    for security. (CVE-2024-21011)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401-perf,
+    11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2 and 22; Oracle GraalVM Enterprise
+    Edition: 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a
+    web service which supplies data to the APIs. This vulnerability also applies to Java deployments,
+    typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load
+    and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for
+    security. (CVE-2024-21068)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Networking). Supported versions that are affected are Oracle Java SE: 11.0.22,
+    17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM Enterprise Edition:
+    20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java
+    Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes
+    from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java
+    deployments, typically in servers, that load and run only trusted code (e.g., code installed by an
+    administrator). (CVE-2024-21012)
+
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to an OpenJDK version greater than 8u402 / 11.0.22 / 17.0.10 / 21.0.2 / 22.0.0","https://openjdk.java.net/groups/vulnerability/advisories/2024-04-16","
+  Path              : /usr/lib/jvm/java-17-openjdk-amd64/
+  Installed version : 17.0.10
+  Fixed version     : Upgrade to a version greater than 17.0.10
+","","3.7","1.9","3.2","2.9","Low","","","","2024/04/17","2024/04/17","","",""
+"193405","CVE-2024-21094","2.6","Low","10.0.2.15","tcp","0","OpenJDK 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 / 21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0 Multiple Vulnerabilities (2024-04-16","OpenJDK is affected by multiple vulnerabilities.","The version of OpenJDK installed on the remote host is prior to 8 <= 8u402 / 11.0.0 <= 11.0.22 / 17.0.0 <= 17.0.10 /
+21.0.0 <= 21.0.2 / 22.0.0 <= 22.0.0. It is, therefore, affected by multiple vulnerabilities as referenced in the
+2024-04-16 advisory.
+
+Please Note: Java CVEs do not always include OpenJDK versions, but are confirmed separately by Tenable using the patch
+versions from the referenced OpenJDK security advisory.
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized update,
+    insert or delete access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition accessible data. Note: This vulnerability can be exploited by using APIs in the specified
+    Component, e.g., through a web service which supplies data to the APIs. This vulnerability also applies to
+    Java deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java
+    applets, that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java
+    sandbox for security. (CVE-2024-21094)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM Enterprise Edition product of Oracle Java SE
+    (component: Concurrency). Supported versions that are affected are Oracle Java SE: 8u401, 8u401-perf,
+    11.0.22; Oracle GraalVM Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows
+    unauthenticated attacker with network access via multiple protocols to compromise Oracle Java SE, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM Enterprise Edition.
+    Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a web
+    service which supplies data to the APIs. This vulnerability also applies to Java deployments, typically in
+    clients running sandboxed Java Web Start applications or sandboxed Java applets, that load and run
+    untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for security.
+    (CVE-2024-21085)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401,
+    8u401-perf, 11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM
+    Enterprise Edition: 20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker
+    with network access via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle
+    GraalVM Enterprise Edition. Successful attacks of this vulnerability can result in unauthorized ability to
+    cause a partial denial of service (partial DOS) of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM
+    Enterprise Edition. Note: This vulnerability can be exploited by using APIs in the specified Component,
+    e.g., through a web service which supplies data to the APIs. This vulnerability also applies to Java
+    deployments, typically in clients running sandboxed Java Web Start applications or sandboxed Java applets,
+    that load and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox
+    for security. (CVE-2024-21011)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Hotspot). Supported versions that are affected are Oracle Java SE: 8u401-perf,
+    11.0.22, 17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2 and 22; Oracle GraalVM Enterprise
+    Edition: 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability can be exploited by using APIs in the specified Component, e.g., through a
+    web service which supplies data to the APIs. This vulnerability also applies to Java deployments,
+    typically in clients running sandboxed Java Web Start applications or sandboxed Java applets, that load
+    and run untrusted code (e.g., code that comes from the internet) and rely on the Java sandbox for
+    security. (CVE-2024-21068)
+
+  - Vulnerability in the Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition product of
+    Oracle Java SE (component: Networking). Supported versions that are affected are Oracle Java SE: 11.0.22,
+    17.0.10, 21.0.2, 22; Oracle GraalVM for JDK: 17.0.10, 21.0.2, 22; Oracle GraalVM Enterprise Edition:
+    20.3.13 and 21.3.9. Difficult to exploit vulnerability allows unauthenticated attacker with network access
+    via multiple protocols to compromise Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise
+    Edition. Successful attacks of this vulnerability can result in unauthorized update, insert or delete
+    access to some of Oracle Java SE, Oracle GraalVM for JDK, Oracle GraalVM Enterprise Edition accessible
+    data. Note: This vulnerability applies to Java deployments, typically in clients running sandboxed Java
+    Web Start applications or sandboxed Java applets, that load and run untrusted code (e.g., code that comes
+    from the internet) and rely on the Java sandbox for security. This vulnerability does not apply to Java
+    deployments, typically in servers, that load and run only trusted code (e.g., code installed by an
+    administrator). (CVE-2024-21012)
+
+Note that Nessus has not tested for these issues but has instead relied only on the application's self-reported version
+number.","Upgrade to an OpenJDK version greater than 8u402 / 11.0.22 / 17.0.10 / 21.0.2 / 22.0.0","https://openjdk.java.net/groups/vulnerability/advisories/2024-04-16","
+  Path              : /usr/lib/jvm/java-17-openjdk-amd64/
+  Installed version : 17.0.10
+  Fixed version     : Upgrade to a version greater than 17.0.10
+","","3.7","1.9","3.2","2.9","Low","","","","2024/04/17","2024/04/17","","",""
